@@ -15,24 +15,15 @@
 
 
 		<form method="post" action="process.php">
-		 Opciones de filtrado: <br>
-		 <select name="taskOption">
-			 <option value="">Selecciona una opcion</option>
-			 <option value="chargeduserid">Interno</option>
-			 <option value="suscribername">Nombre</option>
-			 <option value="date">Fecha</option>
-			 <option value="time">Hora</option>
-			 <option value="callduration">Duration</option>
-			 <option value="diallednumber">Destino</option>
-			 <option value="communicationtype">Tipo</option>
-		 </select>
-
-		 <br>From:
+		 Opciones de filtrado por fecha: <br>
+		 From:
 		 <input type="date" name="dateFrom" id="dateFrom" value="<?php echo date('2017-01-01'); ?>" min="2017-01-01" max="2017-12-31"/>
 		 <br/>
 		 To:
 		 <input type="date" name="dateTo" id="dateTo" value="<?php echo date('Y-m-d'); ?>" min="2017-01-01" max="2019-12-31"/>
-
+		 <br/>
+		 Opciones de filtrado por interno:
+		 <input type="number" name="inter" id="inter" value="100" min="100" max="600">
 
 		 <input type="submit" value="Filtrar"/>
 	 </form>

@@ -1,7 +1,6 @@
 <?php
 //include conexionection file
 include("./conexion.php");
-
 require "/usr/share/php/fpdf/fpdf.php";
 
 
@@ -11,12 +10,12 @@ class PDF extends FPDF
 function Header()
 {
    // Logo
-   //$this->Image('https://i2.wp.com/tutorialswebsite.com/wp-content/uploads/2016/01/cropped-LOGO-1.png',10,10,50);
+   $this->Image('https://i2.wp.com/tutorialswebsite.com/wp-content/uploads/2016/01/cropped-LOGO-1.png',10,10,50);
    $this->SetFont('Arial','B',13);
    // Move to the right
    $this->Cell(80);
    // Title
-   //$this->Cell(80,10,'Employee List',1,0,'C');
+   $this->Cell(80,10,'Llamadas entrantes',1,0,'C');
    // Line break
    $this->Ln(20);
 }
@@ -33,37 +32,47 @@ function Footer()
 }
 }
 
+
+$option = isset($_POST['inter']) ? $_POST['inter'] : false;
+$fecha = isset($_POST['dateFrom']) ? $_POST['dateFrom'] : false;
+$fecha1 = isset($_POST['dateTo']) ? $_POST['dateTo'] : false;
+
+$sql3="";
+$sql2="";
+$sql3 .="WHERE chargeduserid=".$option."";
+$sql2 .="date BETWEEN '$fecha' AND '$fecha1'";
+
 //$display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora','callduration'=> 'Duracion', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo','id'=>'ID','chargedusertype'=>'Usertype','ringingduration'=>'Ring','initialuserid'=>'Initial','trunkid'=>'trunk' );
 $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora','callduration'=> 'Duracion', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo');
 
 $sql="(SELECT
-						chargeduserid,
-						suscribername,
-						date,
-						time,
-						callduration,
-						diallednumber,
-						communicationtype
+            chargeduserid,
+            suscribername,
+            date,
+            time,
+            callduration,
+            diallednumber,
+            communicationtype
 
-						FROM
+            FROM
 
-								tickets_incoming
-								)
-						UNION
+                tickets_incoming
+                " . $sql3 . " AND " . $sql2 . ")
+                UNION
+      (SELECT
+                  chargeduserid,
+                  suscribername,
+                  date,
+                  time,
+                  callduration,
+                  diallednumber,
+                  communicationtype
 
-			(SELECT
-						chargeduserid,
-						suscribername,
-						date,
-						time,
-						callduration,
-						diallednumber,
-						communicationtype
+                  FROM
 
-						FROM
-
-								tickets_incoming_transfer)
-					";
+                      tickets_incoming_transfer
+                      " . $sql3 . " AND " . $sql2 . ")
+                                ";
 
 $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 //$header = mysqli_query($conexion, "SHOW columns FROM tickets_incoming WHERE field != 'created_on'");
