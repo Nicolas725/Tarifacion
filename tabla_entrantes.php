@@ -4,29 +4,17 @@
 
 <html>
 	<body>
-		<div class="container" style="padding-top:50px">
-		<h2>Generar PDF</h2>
-		<form class="form-inline" method="post" action="generate_pdf.php">
-		<button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary"><i class="fa fa-pdf" aria-hidden="true"></i>
-		Generate PDF</button>
-		</form>
-		</fieldset>
-		</div>
-
 
 		<form method="post" action="process.php">
-		 Opciones de filtrado por fecha: <br>
-		 From:
-		 <input type="date" name="dateFrom" id="dateFrom" value="<?php echo date('2017-01-01'); ?>" min="2017-01-01" max="2017-12-31"/>
-		 <br/>
-		 To:
-		 <input type="date" name="dateTo" id="dateTo" value="<?php echo date('Y-m-d'); ?>" min="2017-01-01" max="2019-12-31"/>
-		 <br/>
-		 Opciones de filtrado por interno:
-		 <input type="number" name="inter" id="inter" value="100" min="100" max="600">
-
-		 <input type="submit" value="Filtrar"/>
-	 </form>
+			<br/>
+			Seleccione la opcion por la cual desea filtrar:
+			<br/>
+			<input type="checkbox" name="inter1" value="inter1">Interno<br>
+			<input type="checkbox" name="date" value="date">Fecha<br>
+			<input type="checkbox" name="sed" value="sed">Sede<br>
+			<input type="checkbox" name="depar" value="depar">Departamento<br>
+		  <input type="submit" value="Filtrar">
+		</form>
 
 	<div class="row">
 		<div class="col-sm-12">

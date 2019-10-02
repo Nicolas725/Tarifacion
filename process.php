@@ -1,94 +1,36 @@
 <?php
   include("./conexion.php");
   //$option = isset($_POST['taskOption']) ? $_POST['taskOption'] : false;
-  $option = isset($_POST['inter']) ? $_POST['inter'] : false;
-  $fecha = isset($_POST['dateFrom']) ? $_POST['dateFrom'] : false;
-  $fecha1 = isset($_POST['dateTo']) ? $_POST['dateTo'] : false;
-  echo $option;
- ?>
+  $option = isset($_POST['inter1']) ? $_POST['inter1'] : false;
+  $fecha = isset($_POST['date']) ? $_POST['date'] : false;
+  $sede = isset($_POST['sed']) ? $_POST['sed'] : false;
+  $depar = isset($_POST['depar']) ? $_POST['depar'] : false;
 
- <div class="row">
- 	<div class="col-sm-12">
- 	<h2>LLamadas Entrantes</h2>
-
-  <form class="form-inline" method="post" action="generate_pdf.php">
-    <input type='hidden' name='inter' value='<?php echo "$option";?>'/>
-    <input type='hidden' name='dateFrom' value='<?php echo "$fecha";?>'/>
-    <input type='hidden' name='dateTo' value='<?php echo "$fecha1";?>'/>
-    <button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary"><i class="fa fa-pdf" aria-hidden="true"></i>
-    Generate PDF</button>
-  </form>
-
-
-   <table class="table table-hover table-condensed table-bordered">
-     <tr>
-       <td>Interno</td>
-       <td>Nombre</td>
-       <td>Fecha</td>
-       <td>Hora</td>
-       <td>Duration</td>
-       <td>Destino</td>
-       <td>Tipo</td>
-     </tr>
-
-     <?php
-     //error_reporting(E_ERROR | E_PARSE); //hace que no se muestren los warning
-     //$sql1="";
-     //$sql1 .="ORDER BY " . $option . "";
-     $sql3="";
-     $sql2="";
-     $sql3 .="WHERE chargeduserid=".$option."";
-     $sql2 .="date BETWEEN '$fecha' AND '$fecha1'";
-     //$sql1 .="ORDER BY '" . $option . "'";
-
-     $sql="(SELECT
-                 chargeduserid,
-                 suscribername,
-                 date,
-                 time,
-                 callduration,
-                 diallednumber,
-                 communicationtype
-
-                 FROM
-
-                     tickets_incoming
-                     " . $sql3 . " AND " . $sql2 . ")
-                     UNION
-           (SELECT
-                       chargeduserid,
-                       suscribername,
-                       date,
-                       time,
-                       callduration,
-                       diallednumber,
-                       communicationtype
-
-                       FROM
-
-                           tickets_incoming_transfer
-                           " . $sql3 . " AND " . $sql2 . ")
-                                     ";
-
-               echo $sql;
-
-       $result=mysqli_query($conexion,$sql);
-       while($ver=mysqli_fetch_row($result)){
-      ?>
-
-     <tr>
-       <td><?php echo $ver[0] ?></td>
-       <td><?php echo $ver[1] ?></td>
-       <td><?php echo $ver[2] ?></td>
-       <td><?php echo $ver[3] ?></td>
-       <td><?php echo $ver[4] ?></td>
-       <td><?php echo $ver[5] ?></td>
-       <td><?php echo $ver[6] ?></td>
-
-     </tr>
-     <?php
-   }
-      ?>
-   </table>
-   </div>
-   </div>
+if ($option || $fecha || $sede || $depar){
+?>
+<form method="post" action="process1.php">
+  <?php if ($fecha) {?>
+ Seleccione las fechas: <br>
+ From:
+ <input type="date" name="dateFrom" id="dateFrom" value="<?php echo date('2017-01-01'); ?>" min="2017-01-01" max="2017-12-31"/>
+ <br/>
+ To:
+ <input type="date" name="dateTo" id="dateTo" value="<?php echo date('Y-m-d'); ?>" min="2017-01-01" max="2019-12-31"/>
+<?php } if ($option) {?>
+ <br/>
+ Seleccione el interno:
+ <input type="number" name="inter" id="inter" value="100" min="100" max="600">
+<?php } if ($sede) {?>
+ <br/>
+ Seleccione la Sede:
+ <input type="text" name="sed1" id="sed1" value="Central">
+<?php } if ($depar) {?>
+ <br/>
+ Seleccione el Departamento:
+ <input type="text" name="depar1" id="depar1" value="Ingenieria">
+<?php }?>
+ <input type="submit" value="Filtrar"/>
+</form>
+<?php
+}
+?>
