@@ -14,9 +14,9 @@ function Header()
 
    $this->SetFont('Arial','B',13);
    // Move to the right
-   $this->Cell(80);
+   $this->Cell(100);
    // Title
-   $this->Cell(-15);
+   //$this->Cell(-15);
 
    $this->Cell(80,10,'Llamadas salientes',1,0,'C');
    // Line break
@@ -63,20 +63,20 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
    //echo $sql;
     $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-    $pdf = new PDF();
+    $pdf = new PDF('L');
     //header
     $pdf->AddPage();
     //foter page
     $pdf->AliasNbPages();
-    $pdf->SetFont('Arial','B',9);
+    $pdf->SetFont('Arial','B',12);
     foreach($display_heading as $heading) {
-      $pdf->Cell(21.5,9,$heading,1);
+      $pdf->Cell(30,9,$heading,1);
     }
     foreach($result as $row) {
-    $pdf->SetFont('Arial','',8);
+    $pdf->SetFont('Arial','',10);
     $pdf->Ln();
     foreach($row as $column)
-    $pdf->Cell(21.5,9,$column,1);
+    $pdf->Cell(30,9,$column,1);
     }
     $pdf->Output();
 
@@ -95,20 +95,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
  //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-  $pdf = new PDF();
+  $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  $pdf->SetFont('Arial','B',9);
+  $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
-  $pdf->SetFont('Arial','',8);
+  $pdf->SetFont('Arial','',10);
   $pdf->Ln();
   foreach($row as $column)
-  $pdf->Cell(21.5,9,$column,1);
+  $pdf->Cell(30,9,$column,1);
   }
   $pdf->Output();
 
@@ -127,20 +127,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
- $pdf = new PDF();
+ $pdf = new PDF('L');
  //header
  $pdf->AddPage();
  //foter page
  $pdf->AliasNbPages();
- $pdf->SetFont('Arial','B',9);
+ $pdf->SetFont('Arial','B',12);
  foreach($display_heading as $heading) {
-   $pdf->Cell(21.5,9,$heading,1);
+   $pdf->Cell(30,9,$heading,1);
  }
  foreach($result as $row) {
- $pdf->SetFont('Arial','',8);
+ $pdf->SetFont('Arial','',10);
  $pdf->Ln();
  foreach($row as $column)
- $pdf->Cell(21.5,9,$column,1);
+ $pdf->Cell(30,9,$column,1);
  }
  $pdf->Output();
 
@@ -159,20 +159,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
- $pdf = new PDF();
+ $pdf = new PDF('L');
  //header
  $pdf->AddPage();
  //foter page
  $pdf->AliasNbPages();
- $pdf->SetFont('Arial','B',9);
+ $pdf->SetFont('Arial','B',12);
  foreach($display_heading as $heading) {
-   $pdf->Cell(21.5,9,$heading,1);
+   $pdf->Cell(30,9,$heading,1);
  }
  foreach($result as $row) {
- $pdf->SetFont('Arial','',8);
+ $pdf->SetFont('Arial','',10);
  $pdf->Ln();
  foreach($row as $column)
- $pdf->Cell(21.5,9,$column,1);
+ $pdf->Cell(30,9,$column,1);
  }
  $pdf->Output();
 
@@ -191,20 +191,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
- $pdf = new PDF();
+ $pdf = new PDF('L');
  //header
  $pdf->AddPage();
  //foter page
  $pdf->AliasNbPages();
- $pdf->SetFont('Arial','B',9);
+ $pdf->SetFont('Arial','B',12);
  foreach($display_heading as $heading) {
-   $pdf->Cell(21.5,9,$heading,1);
+   $pdf->Cell(30,9,$heading,1);
  }
  foreach($result as $row) {
- $pdf->SetFont('Arial','',8);
+ $pdf->SetFont('Arial','',10);
  $pdf->Ln();
  foreach($row as $column)
- $pdf->Cell(21.5,9,$column,1);
+ $pdf->Cell(30,9,$column,1);
  }
  $pdf->Output();
 
@@ -223,20 +223,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-  $pdf = new PDF();
+  $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  $pdf->SetFont('Arial','B',9);
+  $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
-  $pdf->SetFont('Arial','',8);
+  $pdf->SetFont('Arial','',10);
   $pdf->Ln();
   foreach($row as $column)
-  $pdf->Cell(21.5,9,$column,1);
+  $pdf->Cell(30,9,$column,1);
   }
   $pdf->Output();
 
@@ -255,20 +255,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-  $pdf = new PDF();
+  $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  $pdf->SetFont('Arial','B',9);
+  $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
-  $pdf->SetFont('Arial','',8);
+  $pdf->SetFont('Arial','',10);
   $pdf->Ln();
   foreach($row as $column)
-  $pdf->Cell(21.5,9,$column,1);
+  $pdf->Cell(30,9,$column,1);
   }
   $pdf->Output();
 
@@ -287,20 +287,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-  $pdf = new PDF();
+  $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  $pdf->SetFont('Arial','B',9);
+  $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
-  $pdf->SetFont('Arial','',8);
+  $pdf->SetFont('Arial','',10);
   $pdf->Ln();
   foreach($row as $column)
-  $pdf->Cell(21.5,9,$column,1);
+  $pdf->Cell(30,9,$column,1);
   }
   $pdf->Output();
 
@@ -319,20 +319,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-  $pdf = new PDF();
+  $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  $pdf->SetFont('Arial','B',9);
+  $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
-  $pdf->SetFont('Arial','',8);
+  $pdf->SetFont('Arial','',10);
   $pdf->Ln();
   foreach($row as $column)
-  $pdf->Cell(21.5,9,$column,1);
+  $pdf->Cell(30,9,$column,1);
   }
   $pdf->Output();
 
@@ -351,20 +351,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-  $pdf = new PDF();
+  $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  $pdf->SetFont('Arial','B',9);
+  $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
-  $pdf->SetFont('Arial','',8);
+  $pdf->SetFont('Arial','',10);
   $pdf->Ln();
   foreach($row as $column)
-  $pdf->Cell(21.5,9,$column,1);
+  $pdf->Cell(30,9,$column,1);
   }
   $pdf->Output();
 
@@ -383,20 +383,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-  $pdf = new PDF();
+  $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  $pdf->SetFont('Arial','B',9);
+  $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
-  $pdf->SetFont('Arial','',8);
+  $pdf->SetFont('Arial','',10);
   $pdf->Ln();
   foreach($row as $column)
-  $pdf->Cell(21.5,9,$column,1);
+  $pdf->Cell(30,9,$column,1);
   }
   $pdf->Output();
 
@@ -415,20 +415,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-  $pdf = new PDF();
+  $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  $pdf->SetFont('Arial','B',9);
+  $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
-  $pdf->SetFont('Arial','',8);
+  $pdf->SetFont('Arial','',10);
   $pdf->Ln();
   foreach($row as $column)
-  $pdf->Cell(21.5,9,$column,1);
+  $pdf->Cell(30,9,$column,1);
   }
   $pdf->Output();
 
@@ -447,20 +447,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-  $pdf = new PDF();
+  $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  $pdf->SetFont('Arial','B',9);
+  $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
-  $pdf->SetFont('Arial','',8);
+  $pdf->SetFont('Arial','',10);
   $pdf->Ln();
   foreach($row as $column)
-  $pdf->Cell(21.5,9,$column,1);
+  $pdf->Cell(30,9,$column,1);
   }
   $pdf->Output();
 
@@ -479,20 +479,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-  $pdf = new PDF();
+  $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  $pdf->SetFont('Arial','B',9);
+  $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
-  $pdf->SetFont('Arial','',8);
+  $pdf->SetFont('Arial','',10);
   $pdf->Ln();
   foreach($row as $column)
-  $pdf->Cell(21.5,9,$column,1);
+  $pdf->Cell(30,9,$column,1);
   }
   $pdf->Output();
 
@@ -511,20 +511,20 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
 //echo $sql;
  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
-  $pdf = new PDF();
+  $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  $pdf->SetFont('Arial','B',9);
+  $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
-  $pdf->SetFont('Arial','',8);
+  $pdf->SetFont('Arial','',10);
   $pdf->Ln();
   foreach($row as $column)
-  $pdf->Cell(21.5,9,$column,1);
+  $pdf->Cell(30,9,$column,1);
   }
   $pdf->Output();
 }
