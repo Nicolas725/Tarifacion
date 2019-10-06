@@ -8,7 +8,7 @@
 
 if ($option || $fecha || $sede || $depar){
 ?>
-<form method="post" action="process1.php">
+<form method="post" action="process1_entrantes.php">
   <?php if ($fecha) {?>
  Seleccione las fechas: <br>
  From:
@@ -23,12 +23,28 @@ if ($option || $fecha || $sede || $depar){
 <?php } if ($sede) {?>
  <br/>
  Seleccione la Sede:
- <input type="text" name="sed1" id="sed1" value="Central">
-<?php } if ($depar) {?>
+ <?php
+ $sql = "SELECT nombreSede FROM SEDES";
+ $result = mysqli_query($conexion,$sql);
+ echo "<select name='sede'>";
+ while ($row = mysqli_fetch_array($result)) {
+     echo "<option value='" . $row['nombreSede'] ."'>" . $row['nombreSede'] ."</option>";
+ }
+ echo "</select>";
+ }
+if ($depar) {?>
  <br/>
  Seleccione el Departamento:
- <input type="text" name="depar1" id="depar1" value="Ingenieria">
-<?php }?>
+ <?php
+ $sql = "SELECT nombreDepar FROM DEPARTAMENTOS";
+ $result = mysqli_query($conexion,$sql);
+ echo "<select name='nombreDepar'>";
+ while ($row = mysqli_fetch_array($result)) {
+     echo "<option value='" . $row['nombreDepar'] ."'>" . $row['nombreDepar'] ."</option>";
+ }
+ echo "</select>";
+ }
+ ?>
  <input type="submit" value="Filtrar"/>
 </form>
 <?php

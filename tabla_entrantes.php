@@ -5,7 +5,7 @@
 <html>
 	<body>
 
-		<form method="post" action="process.php">
+		<form method="post" action="process_entrantes.php">
 			<br/>
 			Seleccione la opcion por la cual desea filtrar:
 			<br/>
@@ -28,6 +28,8 @@
 					<td>Duration</td>
 					<td>Destino</td>
 					<td>Tipo</td>
+					<td>Sede</td>
+					<td>Departamento</td>
 				</tr>
 
 				<?php
@@ -48,7 +50,9 @@
 											time,
 											callduration,
 											diallednumber,
-											communicationtype
+											communicationtype,
+											nombreSede,
+											nombreDepar
 
 											FROM
 
@@ -63,7 +67,9 @@
 											time,
 											callduration,
 											diallednumber,
-											communicationtype
+											communicationtype,
+											nombreSede,
+											nombreDepar
 
 											FROM
 
@@ -82,6 +88,8 @@
 					<td><?php echo $ver[4] ?></td>
 					<td><?php echo $ver[5] ?></td>
 					<td><?php echo $ver[6] ?></td>
+					<td><?php echo $ver[7] ?></td>
+					<td><?php echo $ver[8] ?></td>
 
 				</tr>
 				<?php
