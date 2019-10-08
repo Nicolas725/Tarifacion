@@ -55,7 +55,7 @@
                  ?></td>
             </tr>
             <tr>
-               <td><a href="agrDptos.php" class="btn btn-primary">Agrupar por Sede y Dpto.</a></td>
+               <td><a href="agregar_S_D.php" class="btn btn-primary">Agrupar por Sede y Dpto.</a></td>
                <td><a href="agenda.php" class="btn btn-primary">Crear Agenda</a></td>
                <td><a href="listar_entrantes.php" class="btn btn-primary">Llamadas Entrantes</a></td>
             </tr>
