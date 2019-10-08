@@ -13,18 +13,37 @@
 	$result=mysqli_query($conexion,$sql);
 	while($ver=mysqli_fetch_row($result)){
 		$valor1[$i]= $ver[0];
+
+		$hours1 = floor($valor1[$i] / 3600);
+		$mins1 = floor($valor1[$i] / 60 % 60);
+		$secs1 = floor($valor1[$i] % 60);
+
+		if ($secs1>1){
+			$mins1=$mins1+1;
+			if ($mins1>59){
+				$mins1=0;
+				$hours1=$hours1+1;
+				}
+			$secs1=0;
+		}
+
+		$timeFormat1 = sprintf('%02d:%02d:%02d', $hours1, $mins1, $secs1);
+		ceil($timeFormat1);
+		echo "TIME	",$timeFormat1;
+		echo "<br>";
+
+		$timeFormat2[$i]=$hours1*3600+$mins1*60;
+
+		echo $timeFormat2[$i];
+		echo "<br>";
 		$i++;
 	}
-	$valor2=array_sum($valor1);
 
-
-
+	$valor2=array_sum($timeFormat2);
 	$hours = floor($valor2 / 3600);
 	$mins = floor($valor2 / 60 % 60);
 	$secs = floor($valor2 % 60);
-
 	$timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
-
 	$valor2=($valor2/60)*$valor;
 	$valor2="$".round($valor2,2);
 
