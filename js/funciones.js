@@ -1,10 +1,8 @@
 
 //SEDES
 function agregardatos(sede){
-
 	cadena="sede=" + sede;
 	$('#sede').val('');
-
 	$.ajax({
 		type:"POST",
 		url:"Sedes_agregar.php",
@@ -12,9 +10,9 @@ function agregardatos(sede){
 		success:function(r){
 			if(r==1){
 				$('#Sedes_Tabla').load('Sedes_Tabla.php');
-				alertify.success("agregado con exito :)");
+				alertify.success("Agregado con exito");
 			}else{
-				alertify.error("Fallo el servidor :(");
+				alertify.error("Fallo el servidor");
 			}
 		}
 	});
@@ -49,9 +47,9 @@ function actualizaDatos(){
 
 			if(r==1){
 				$('#Sedes_Tabla').load('Sedes_Tabla.php');
-				alertify.success("Actualizado con exito :)");
+				alertify.success("Actualizado con exito");
 			}else{
-				alertify.error("Fallo el servidor :(");
+				alertify.error("El campo debe estar completo");
 			}
 		}
 	});
@@ -77,7 +75,7 @@ function eliminarDatos(id_S){
 					$('#Sedes_Tabla').load('Sedes_Tabla.php');
 					alertify.success("Eliminado con exito!");
 				}else{
-					alertify.error("Fallo el servidor :(");
+					alertify.error("Fallo al eliminar");
 				}
 			}
 		});
@@ -99,9 +97,9 @@ function agregardatosD(depar){
 		success:function(r){
 			if(r==1){
 				$('#Departamentos_Tabla').load('Departamentos_Tabla.php');
-				alertify.success("agregado con exito :)");
+				alertify.success("Agregado con exito");
 			}else{
-				alertify.error("Fallo el servidor :(");
+				alertify.error("Fallo el servidor");
 			}
 		}
 	});
@@ -136,9 +134,9 @@ function actualizaDatosD(){
 
 			if(r==1){
 				$('#Departamentos_Tabla').load('Departamentos_Tabla.php');
-				alertify.success("Actualizado con exito :)");
+				alertify.success("Actualizado con exito");
 			}else{
-				alertify.error("Fallo el servidor :(");
+				alertify.error("El campo debe estar completo");
 			}
 		}
 	});
@@ -164,7 +162,7 @@ function eliminarDatosD(id_D){
 					$('#Departamentos_Tabla').load('Departamentos_Tabla.php');
 					alertify.success("Eliminado con exito!");
 				}else{
-					alertify.error("Fallo el servidor :(");
+					alertify.error("Fallo el servidor");
 				}
 			}
 		});

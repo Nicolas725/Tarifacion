@@ -102,7 +102,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
   $pdf->AliasNbPages();
   $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
   $pdf->SetFont('Arial','',10);
@@ -134,7 +134,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
  $pdf->AliasNbPages();
  $pdf->SetFont('Arial','B',12);
  foreach($display_heading as $heading) {
-   $pdf->Cell(21.5,9,$heading,1);
+   $pdf->Cell(30,9,$heading,1);
  }
  foreach($result as $row) {
  $pdf->SetFont('Arial','',10);
@@ -166,7 +166,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
  $pdf->AliasNbPages();
  $pdf->SetFont('Arial','B',12);
  foreach($display_heading as $heading) {
-   $pdf->Cell(21.5,9,$heading,1);
+   $pdf->Cell(30,9,$heading,1);
  }
  foreach($result as $row) {
  $pdf->SetFont('Arial','',10);
@@ -198,7 +198,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
  $pdf->AliasNbPages();
  $pdf->SetFont('Arial','B',12);
  foreach($display_heading as $heading) {
-   $pdf->Cell(21.5,9,$heading,1);
+   $pdf->Cell(30,9,$heading,1);
  }
  foreach($result as $row) {
  $pdf->SetFont('Arial','',10);
@@ -230,7 +230,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
   $pdf->AliasNbPages();
   $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
   $pdf->SetFont('Arial','',10);
@@ -262,7 +262,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
   $pdf->AliasNbPages();
   $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
   $pdf->SetFont('Arial','',10);
@@ -294,7 +294,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
   $pdf->AliasNbPages();
   $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
   $pdf->SetFont('Arial','',10);
@@ -326,7 +326,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
   $pdf->AliasNbPages();
   $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
   $pdf->SetFont('Arial','',10);
@@ -358,7 +358,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
   $pdf->AliasNbPages();
   $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
   $pdf->SetFont('Arial','',10);
@@ -390,7 +390,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
   $pdf->AliasNbPages();
   $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
   $pdf->SetFont('Arial','',10);
@@ -422,7 +422,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
   $pdf->AliasNbPages();
   $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
   $pdf->SetFont('Arial','',10);
@@ -454,7 +454,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
   $pdf->AliasNbPages();
   $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
   $pdf->SetFont('Arial','',10);
@@ -486,7 +486,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
   $pdf->AliasNbPages();
   $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
   $pdf->SetFont('Arial','',10);
@@ -518,7 +518,7 @@ $sql="(SELECT chargeduserid, suscribername, date, time, callduration, diallednum
   $pdf->AliasNbPages();
   $pdf->SetFont('Arial','B',12);
   foreach($display_heading as $heading) {
-    $pdf->Cell(21.5,9,$heading,1);
+    $pdf->Cell(30,9,$heading,1);
   }
   foreach($result as $row) {
   $pdf->SetFont('Arial','',10);

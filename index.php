@@ -38,7 +38,7 @@
 			            ?></td>
             </tr>
             <tr>
-		            <td><a href="archivoAnuario.php" class="btn btn-primary">Crear Anuario</a></td>
+		            <td><a href="agregar_Internos.php" class="btn btn-primary">Crear Internos</a></td>
 		            <td><a href="actualizar.php" class="btn btn-primary">Modificar</a></td>
 		            <td><a href="listar_salientes.php" class="btn btn-primary">Llamadas Salientes</a></td>
             </tr>
@@ -55,8 +55,8 @@
                  ?></td>
             </tr>
             <tr>
-               <td><a href="agregar_S_D.php" class="btn btn-primary">Agrupar por Sede y Dpto.</a></td>
-               <td><a href="agenda.php" class="btn btn-primary">Crear Agenda</a></td>
+               <td><a href="agregar_S_D.php" class="btn btn-primary">Crear Sede y/o Dpto.</a></td>
+               <td><a href="agenda.php" class="btn btn-primary">Tarifacion</a></td>
                <td><a href="listar_entrantes.php" class="btn btn-primary">Llamadas Entrantes</a></td>
             </tr>
 

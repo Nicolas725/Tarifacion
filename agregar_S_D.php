@@ -31,7 +31,8 @@
         </div>
         <div class="modal-body">
           	<label>Sede</label>
-          	<input type="text" name="" id="sede" class="form-control input-sm">
+          	<input type="text" name="" id="sede" class="form-control input-sm" placeholder="Ingrese la sede" required oninvalid="this.setCustomValidity('Ingrese la sede aqui')"
+    oninput="this.setCustomValidity('')">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" id="guardarnuevo">
@@ -73,7 +74,8 @@
 				</div>
 				<div class="modal-body">
 						<label>Departamento</label>
-						<input type="text" name="" id="depar" class="form-control input-sm">
+						<input type="text" name="" id="depar" class="form-control input-sm" placeholder="Ingrese el departamento" required oninvalid="this.setCustomValidity('Ingrese el departamento aqui')"
+    oninput="this.setCustomValidity('')">
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-primary" data-dismiss="modal" id="guardarnuevoD">
