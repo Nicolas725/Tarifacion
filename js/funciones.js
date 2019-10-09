@@ -3,6 +3,7 @@
 function agregardatos(sede){
 
 	cadena="sede=" + sede;
+	$('#sede').val('');
 
 	$.ajax({
 		type:"POST",
@@ -89,6 +90,7 @@ function eliminarDatos(id_S){
 function agregardatosD(depar){
 
 	cadena="depar=" + depar;
+	$('#depar').val('');
 
 	$.ajax({
 		type:"POST",
