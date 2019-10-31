@@ -1,5 +1,5 @@
 body{
-  background:url(../imagenes/fondo.jpg);
+  background-image:url("imagenes/blue.jpg");
 }
 [class^="col-"]{
   height: 20px;

@@ -21,7 +21,7 @@ function agregardatosI(nombre,inter,sede,depar){
 				$('#Internos_Tabla').load('Internos_Tabla.php');
 				alertify.success("Agregado con exito");
 			}else{
-				alertify.error("Los campos deben estar completos");
+				alertify.error("Los campos no están completos o el interno ya existe");
 			}
 		}
 	});
@@ -67,7 +67,7 @@ function actualizaDatosI(){
 				$('#Internos_Tabla').load('Internos_Tabla.php');
 				alertify.success("Actualizado con exito");
 			}else{
-				alertify.error("Los campos deben estar completos");
+				alertify.error("Los campos no están completos o el interno ya existe");
 			}
 		}
 	});

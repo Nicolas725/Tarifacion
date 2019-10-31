@@ -1,7 +1,7 @@
 <?php
   $host='localhost';
   $usuario='root';
-  $clave='nico1234';
+  $clave='mac1778##';
   $baseDatos='telefonos';
   //$conexion= mysql_connect($host,$usuario,$clave,$baseDatos);
   $conexion = new mysqli($host, $usuario, $clave, $baseDatos);

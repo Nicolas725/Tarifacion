@@ -1,0 +1,10 @@
+body{
+  background-image: url("../imagenes/blanco.jpg");
+}
+[class^="col-"]{
+  height: 20px;
+  margin-bottom:1px;
+  text-align:center;
+  line-height:20px;
+
+}

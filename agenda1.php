@@ -18,7 +18,7 @@
 		$mins1 = floor($valor1[$i] / 60 % 60);
 		$secs1 = floor($valor1[$i] % 60);
 
-		if ($secs1>1){
+		if ($secs1>=1){
 			$mins1=$mins1+1;
 			if ($mins1>59){
 				$mins1=0;
@@ -29,13 +29,13 @@
 
 		$timeFormat1 = sprintf('%02d:%02d:%02d', $hours1, $mins1, $secs1);
 		ceil($timeFormat1);
-		echo "TIME	",$timeFormat1;
-		echo "<br>";
+		//echo "TIME	",$timeFormat1;
+		//echo "<br>";
 
 		$timeFormat2[$i]=$hours1*3600+$mins1*60;
 
-		echo $timeFormat2[$i];
-		echo "<br>";
+		//echo $timeFormat2[$i];
+		//echo "<br>";
 		$i++;
 	}
 
@@ -50,19 +50,12 @@
 ?>
 <html>
 	<body>
-		<form class="form-inline" method="post" action="generate_pdf_agenda.php">
-			<?php if ($valor2) {?>
-			<input type='hidden' name='valor2' value='<?php echo "$valor2";?>'/>
-			<?php } if ($timeFormat) {?>
-			<input type='hidden' name='timeFormat' value='<?php echo "$timeFormat";?>'/>
-			<?php } if ($fecha) {?>
-	    <input type='hidden' name='dateFrom' value='<?php echo "$fecha";?>'/>
-	    <?php } if ($fecha1) {?>
-	    <input type='hidden' name='dateTo' value='<?php echo "$fecha1";?>'/>
-	  <?php } ?>
-			<button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary"><i class="fa fa-pdf" aria-hidden="true"></i>
-			Generate PDF</button>
-		</form>
+		El precio del minuto es:
+	  <?php
+	  echo "$".$valor;
+	   ?>
+	   <br>
+
 		El precio total por la cantidad de minutos hablados es:
 		<?php
 		echo $valor2;
@@ -94,7 +87,7 @@
 				$sql1="(SELECT chargeduserid, suscribername, date, time, diallednumber,
 										 communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE date BETWEEN '$fecha' AND '$fecha1'
 										 )
-												UNION
+												UNION ALL
 							(SELECT chargeduserid,suscribername, date, time, diallednumber,
 										 communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE date BETWEEN '$fecha' AND '$fecha1')";
 				 //echo $sql;
@@ -115,9 +108,37 @@
 }
 ?>
 			</tr>
-				<td>TOTAL<td><td><td><td><td><td><td><td><?php echo $timeFormat ?><td><td><?php echo $valor2 ?></td></td>
+				<td>TOTAL<td><td><td><td><td><td><td><td><?php echo $timeFormat ?><td><?php echo $valor2 ?><td></td></td>
 			</tr>
 
 		</table>
+		<form class="form-inline" method="post" action="generate_pdf_agenda.php">
+			<?php if ($valor2) {?>
+			<input type='hidden' name='valor2' value='<?php echo "$valor2";?>'/>
+			<?php } if ($timeFormat) {?>
+			<input type='hidden' name='timeFormat' value='<?php echo "$timeFormat";?>'/>
+			<?php } if ($fecha) {?>
+	    <input type='hidden' name='dateFrom' value='<?php echo "$fecha";?>'/>
+	    <?php } if ($fecha1) {?>
+	    <input type='hidden' name='dateTo' value='<?php echo "$fecha1";?>'/>
+	  	<?php } ?>
+			<button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary"><i class="fa fa-pdf" aria-hidden="true"></i>
+			Generate PDF</button>
+		</form>
+		<form class="form-inline" method="post" action="generate_xls_agenda.php">
+			<?php if ($valor2) {?>
+			<input type='hidden' name='valor2' value='<?php echo "$valor2";?>'/>
+			<?php } if ($timeFormat) {?>
+			<input type='hidden' name='timeFormat' value='<?php echo "$timeFormat";?>'/>
+			<?php } if ($fecha) {?>
+	    <input type='hidden' name='dateFrom' value='<?php echo "$fecha";?>'/>
+	    <?php } if ($fecha1) {?>
+	    <input type='hidden' name='dateTo' value='<?php echo "$fecha1";?>'/>
+		<?php } if ($valor) {?>
+			<input type='hidden' name='valor' value='<?php echo "$valor";?>'/>
+			<?php } ?>
+			<button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary"><i class="fa fa-pdf" aria-hidden="true"></i>
+			Generate XLS</button>
+		</form>
   </body>
 </html>

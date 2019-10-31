@@ -58,7 +58,7 @@
 
 													tickets_incoming
 													)
-											UNION
+											UNION ALL
 
 								(SELECT
 											chargeduserid,

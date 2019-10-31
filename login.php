@@ -1,7 +1,6 @@
 <?php
   session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -9,9 +8,9 @@
     <title>Software de Tarifacion</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilo2.css">
   </head>
-  <body class="background">
+  <body>
     <div class="row">
       <div class="container">
         <br><br>
