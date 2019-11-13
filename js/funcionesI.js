@@ -3,14 +3,14 @@
 function agregardatosI(nombre,inter,sede,depar){
 
 	cadena="nombre=" + nombre +
-			"&inter=" + inter +
-			"&sede=" + sede +
-			"&depar=" + depar;
+	"&inter=" + inter +
+	"&sede=" + sede +
+	"&depar=" + depar;
 
-		$('#nombre').val('');
-		$('#inter').val('');
-		$('#sedeI').val('');
-		$('#deparI').val('');
+	$('#nombre').val('');
+	$('#inter').val('');
+	$('#sedeI').val('');
+	$('#deparI').val('');
 
 	$.ajax({
 		type:"POST",
@@ -52,10 +52,10 @@ function actualizaDatosI(){
 	depar=$('#deparIu').val();
 
 	cadena="id=" + id +
-			"&nombre=" + nombre +
-			"&inter=" + inter +
-			"&sede=" + sede +
-			"&depar=" + depar;
+	"&nombre=" + nombre +
+	"&inter=" + inter +
+	"&sede=" + sede +
+	"&depar=" + depar;
 
 	$.ajax({
 		type:"POST",
@@ -76,24 +76,24 @@ function actualizaDatosI(){
 
 function preguntarSiNoI(id_I){
 	alertify.confirm('Eliminar Datos', '¿Esta seguro de eliminar este registro?',
-					function(){ eliminarDatosI(id_I) }
-                , function(){ alertify.error('Se cancelo')});
+	function(){ eliminarDatosI(id_I) }
+	, function(){ alertify.error('Se cancelo')});
 }
 
 function eliminarDatosI(id_I){
 	cadena="id_I=" + id_I;
 
-		$.ajax({
-			type:"POST",
-			url:"Internos_eliminar.php",
-			data:cadena,
-			success:function(r){
-				if(r==1){
-					$('#Internos_Tabla').load('Internos_Tabla.php');
-					alertify.success("Eliminado con exito!");
-				}else{
-					alertify.error("Fallo el servidor");
-				}
+	$.ajax({
+		type:"POST",
+		url:"Internos_eliminar.php",
+		data:cadena,
+		success:function(r){
+			if(r==1){
+				$('#Internos_Tabla').load('Internos_Tabla.php');
+				alertify.success("Eliminado con exito!");
+			}else{
+				alertify.error("Fallo el servidor");
 			}
-		});
+		}
+	});
 }

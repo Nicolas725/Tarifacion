@@ -1,114 +1,390 @@
 <?php
-	include("./conexion.php");
-	header('Content-type:application/xls');
-	header('Content-Disposition: attachment; filename=periodo_facturacion.xls');
-	$valor = isset($_POST['valor']) ? $_POST['valor'] : false;
-	$fecha = isset($_POST['dateFrom']) ? $_POST['dateFrom'] : false;
-	$fecha1 = isset($_POST['dateTo']) ? $_POST['dateTo'] : false;
-	$valor2 = isset($_POST['valor2']) ? $_POST['valor2'] : false;
-	$timeFormat = isset($_POST['timeFormat']) ? $_POST['timeFormat'] : false;
+include("./conexion.php");
+header('Content-type:application/xls');
+header('Content-Disposition: attachment; filename=periodo_facturacion.xls');
+error_reporting(E_ERROR | E_PARSE); //hace que no se muestren los warning
 
-	$i=0;
-		//error_reporting(E_ERROR | E_PARSE); //hace que no se muestren los warning
-	$sql="(SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing WHERE date BETWEEN '$fecha' AND '$fecha1')
-					UNION ALL
-					(SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing_transfer WHERE date BETWEEN '$fecha' AND '$fecha1')";
-	//echo $sql;
-	$result=mysqli_query($conexion,$sql);
-	while($ver=mysqli_fetch_row($result)){
-		$valor1[$i]= $ver[0];
+$tarifa = isset($_POST['tarifa']) ? $_POST['tarifa'] : false;
+$fecha = isset($_POST['dateFrom']) ? $_POST['dateFrom'] : false;
+$fecha1 = isset($_POST['dateTo']) ? $_POST['dateTo'] : false;
+$timeFormat = isset($_POST['timeFormat']) ? $_POST['timeFormat'] : false;
+$internacional = isset($_POST['internacional']) ? $_POST['internacional'] : false;
+$nacional = isset($_POST['nacional']) ? $_POST['nacional'] : false;
+$local = isset($_POST['local']) ? $_POST['local'] : false;
+$celular = isset($_POST['celular']) ? $_POST['celular'] : false;
+$Tinter = isset($_POST['Tinter']) ? $_POST['Tinter'] : false;
+$Tnacion = isset($_POST['Tnacion']) ? $_POST['Tnacion'] : false;
+$Tlocal = isset($_POST['Tlocal']) ? $_POST['Tlocal'] : false;
+$Tcel = isset($_POST['Tcel']) ? $_POST['Tcel'] : false;
+$individual = isset($_POST['costos']) ? $_POST['costos'] : false;
 
-		$hours1 = floor($valor1[$i] / 3600);
-		$mins1 = floor($valor1[$i] / 60 % 60);
-		$secs1 = floor($valor1[$i] % 60);
 
-		if ($secs1>=1){
-			$mins1=$mins1+1;
-			if ($mins1>59){
-				$mins1=0;
-				$hours1=$hours1+1;
-				}
-			$secs1=0;
-		}
-
-		$timeFormat1 = sprintf('%02d:%02d:%02d', $hours1, $mins1, $secs1);
-		ceil($timeFormat1);
-		$timeFormat2[$i]=$hours1*3600+$mins1*60;
-		$i++;
-	}
-
-	$valor2=array_sum($timeFormat2);
-	$hours = floor($valor2 / 3600);
-	$mins = floor($valor2 / 60 % 60);
-	$secs = floor($valor2 % 60);
-	$timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
-	$valor2=($valor2/60)*$valor;
-	$valor2="$".round($valor2,2);
+$Prefijo=array('00',
+'011','0221','0223','0291','03833',
+'0351','03783','03722','02965','0343',
+'03717','0388','02954','03822','0261',
+'03752','0299','02920','0387','0264',
+'02652','02966','0342','0341','0385',
+'0381','02901',
+'3','4','5','6',
+'15');
+$min=[];
+$costo=[];
 
 ?>
 <div class="row">
- <div class="col-sm-12">
- <h2>Periodo de Facturacion</h2>
- El precio del minuto es:
- <?php
- echo "$".$valor;
-	?>
-	<br>
+	<div class="col-sm-12">
+		<h2>Periodo de Facturacion</h2>
+		El precio total por la cantidad de minutos hablados es:
+		<?php
+		echo $tarifa;
+		?>
+		<br>
+		<br>
+		La cantidad de minutos hablados es:
+		<?php
+		echo $timeFormat;
+		?>
+		<br>
+		<br>
 
- El precio total por la cantidad de minutos hablados es:
- <?php
- echo $valor2;
-	?>
-	<br>
- La cantidad de minutos hablados es:
-	<?php
-	echo $timeFormat;
-	 ?>
-	 <br>
-	 <br>
-				<table class="table table-hover table-condensed table-bordered">
-					<tr>
-						<td>Interno</td>
-						<td>Nombre</td>
-						<td>Fecha</td>
-						<td>Hora</td>
-						<td>Destino</td>
-						<td>Tipo</td>
-						<td>Sede</td>
-						<td>Departamento</td>
-						<td>Duration</td>
+		<table border="1">
+			<tr>
+				<td></td>
+				<td>Internacional</td>
+				<td>Nacional</td>
+				<td>Local</td>
+				<td>Celular</td>
+			</tr>
+			<tr>
+				<td>Precio Min</td>
+				<td><?php	echo "$".$Tinter ?></td>
+				<td><?php	echo "$".$Tnacion ?></td>
+				<td><?php	echo "$".$Tlocal ?></td>
+				<td><?php	echo "$".$Tcel ?></td>
+			</tr>
+			<tr>
+				<td>Total</td>
+				<td><?php	echo $internacional ?></td>
+				<td><?php	echo $nacional ?></td>
+				<td><?php	echo $local ?></td>
+				<td><?php	echo $celular ?></td>
+			</tr>
+		</table>
+		<br>
+		<br>
 
-					</tr>
+		<table border="1" class="table table-hover table-condensed table-bordered">
+			<tr>
+				<td>Interno</td>
+				<td>Nombre</td>
+				<td>Fecha</td>
+				<td>Hora</td>
+				<td>Destino</td>
+				<td>Tipo</td>
+				<td>Sede</td>
+				<td>Departamento</td>
+				<td>Duration</td>
+				<td>Costos</td>
 
-					<?php
-					//error_reporting(E_ERROR | E_PARSE); //hace que no se muestren los warning
-						$sql1="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-												 communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE date BETWEEN '$fecha' AND '$fecha1'
-												 )
-														UNION ALL
-									(SELECT chargeduserid,suscribername, date, time, diallednumber,
-												 communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE date BETWEEN '$fecha' AND '$fecha1')";
-						 //echo $sql;
-							$result=mysqli_query($conexion,$sql1);
-							while($ver=mysqli_fetch_row($result)){
-						 ?>
+			</tr>
+
+			<?php
+			$n=0;
+			$t=0;
+			$l=0;
+			$y=0;
+			while ($n<1){ //INTERNACIONAL
+				$sql3="";
+				$sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%'";
+				$i=0;
+				$sql2="(SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing WHERE " . $sql3 . ")
+				UNION ALL
+				(SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing_transfer WHERE " . $sql3 . ")";
+
+				$result2=mysqli_query($conexion,$sql2);
+				while($ver2=mysqli_fetch_row($result2)){
+					$valor1[$i]= $ver2[0];
+					$hours1 = floor($valor1[$i] / 3600);
+					$mins1 = floor($valor1[$i] / 60 % 60);
+					$secs1 = floor($valor1[$i] % 60);
+
+					if ($secs1>=1){
+						$mins1=$mins1+1;
+						if ($mins1>59){
+							$mins1=0;
+							$hours1=$hours1+1;
+						}
+						$secs1=0;
+					}
+
+					$timeFormat1 = sprintf('%02d:%02d:%02d', $hours1, $mins1, $secs1);
+					ceil($timeFormat1);
+					$timeFormatI[$i]=$hours1*3600+$mins1*60;
+					$i++;
+				}
+				if ($timeFormatI){
+					$valor2=array_sum($timeFormatI);
+					//echo "INTERNACIONAL TIEMPO ",$valor2,"\n";
+					$min[$t]=$valor2;
+					$valor2=($valor2/60)*$Tinter;
+					$costo[$t]=round($valor2,2);
+					$internacional[$t]=$costo[$t];
+					unset($timeFormatI);
+					$t++;
+				}
+
+				$sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+				" . $sql3 . ")
+				UNION ALL
+				(SELECT chargeduserid,suscribername, date, time, diallednumber,
+				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+				" . $sql3 . ") ORDER BY callduration DESC";
+
+				$result=mysqli_query($conexion,$sql);
+				while($ver=mysqli_fetch_row($result)){
+					?>
 					<tr>
 						<td><?php echo $ver[0] ?></td>
 						<td><?php echo $ver[1] ?></td>
 						<td><?php echo $ver[2] ?></td>
 						<td><?php echo $ver[3] ?></td>
-						<td><?php echo $ver[4] ?></td>
+						<td><?php echo ".$ver[4]." ?></td>
 						<td><?php echo $ver[5] ?></td>
 						<td><?php echo $ver[6] ?></td>
 						<td><?php echo $ver[7] ?></td>
 						<td><?php echo $ver[8] ?></td>
-		<?php
-		}
-		?>
+						<td><?php echo $individual[$y] ?></td>
+
 					</tr>
-						<td>TOTAL<td><td><td><td><td><td><td><td><?php echo $timeFormat ?><td><?php echo $valor2 ?><td></td></td>
+					<?php
+					$y++;
+				}
+				$n++;
+			}
+
+			while ($n<28){ //NACIONAL
+				$sql3="";
+				$sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%'";
+				$i=0;
+				$sql2="(SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing WHERE " . $sql3 . ")
+				UNION ALL
+				(SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing_transfer WHERE " . $sql3 . ")";
+
+				$result2=mysqli_query($conexion,$sql2);
+
+				while($ver2=mysqli_fetch_row($result2)){
+					$valor1[$i]= $ver2[0];
+
+					$hours1 = floor($valor1[$i] / 3600);
+					$mins1 = floor($valor1[$i] / 60 % 60);
+					$secs1 = floor($valor1[$i] % 60);
+
+					if ($secs1>=1){
+						$mins1=$mins1+1;
+						if ($mins1>59){
+							$mins1=0;
+							$hours1=$hours1+1;
+						}
+						$secs1=0;
+					}
+
+					$timeFormat1 = sprintf('%02d:%02d:%02d', $hours1, $mins1, $secs1);
+					ceil($timeFormat1);
+					$timeFormatN[$i]=$hours1*3600+$mins1*60;
+					$i++;
+				}
+				if ($timeFormatN){
+					$valor3=array_sum($timeFormatN);
+					//echo "NACIONAL TIEMPO ",$valor3,"\n";
+					$min[$t]=$valor3;
+					$valor3=($valor3/60)*$Tnacion;
+					$costo[$t]=round($valor3,2);
+					$nacional[$t]=$costo[$t];
+					$t++;
+					unset($timeFormatN);
+				}
+
+				$sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+				" . $sql3 . ")
+				UNION ALL
+				(SELECT chargeduserid,suscribername, date, time, diallednumber,
+				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+				" . $sql3 . ") ORDER BY callduration DESC";
+
+				$result=mysqli_query($conexion,$sql);
+				while($ver=mysqli_fetch_row($result)){
+					?>
+					<tr>
+						<td><?php echo $ver[0] ?></td>
+						<td><?php echo $ver[1] ?></td>
+						<td><?php echo $ver[2] ?></td>
+						<td><?php echo $ver[3] ?></td>
+						<td><?php echo ".$ver[4]." ?></td>
+						<td><?php echo $ver[5] ?></td>
+						<td><?php echo $ver[6] ?></td>
+						<td><?php echo $ver[7] ?></td>
+						<td><?php echo $ver[8] ?></td>
+						<td><?php echo $individual[$y] ?></td>
+
+					</tr>
+					<?php
+					$y++;
+				}
+				$n++;
+			}
+
+			while ($n<32){ //LOCAL
+				$sql3="";
+				$sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%'";
+				$i=0;
+				$sql2="(SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing WHERE " . $sql3 . ")
+				UNION ALL
+				(SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing_transfer WHERE " . $sql3 . ")";
+
+				$result2=mysqli_query($conexion,$sql2);
+
+				while($ver2=mysqli_fetch_row($result2)){
+					$valor1[$i]= $ver2[0];
+
+					$hours1 = floor($valor1[$i] / 3600);
+					$mins1 = floor($valor1[$i] / 60 % 60);
+					$secs1 = floor($valor1[$i] % 60);
+
+					if ($secs1>=1){
+						$mins1=$mins1+1;
+						if ($mins1>59){
+							$mins1=0;
+							$hours1=$hours1+1;
+						}
+						$secs1=0;
+					}
+
+					$timeFormat1 = sprintf('%02d:%02d:%02d', $hours1, $mins1, $secs1);
+					ceil($timeFormat1);
+					$timeFormatL[$i]=$hours1*3600+$mins1*60;
+					$i++;
+				}
+				if ($timeFormatL){
+					$valor4=array_sum($timeFormatL);
+					//echo "LOCAL TIEMPO ",$valor4,"\n";
+					$min[$t]=$valor4;
+					$valor4=($valor4/60)*$Tlocal;
+					$costo[$t]=round($valor4,2);
+					$local[$t]=$costo[$t];
+					unset($timeFormatL);
+					$t++;
+				}
+
+				$sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+				" . $sql3 . ")
+				UNION ALL
+				(SELECT chargeduserid,suscribername, date, time, diallednumber,
+				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+				" . $sql3 . ") ORDER BY callduration DESC";
+
+				$result=mysqli_query($conexion,$sql);
+				while($ver=mysqli_fetch_row($result)){
+					?>
+					<tr>
+						<td><?php echo $ver[0] ?></td>
+						<td><?php echo $ver[1] ?></td>
+						<td><?php echo $ver[2] ?></td>
+						<td><?php echo $ver[3] ?></td>
+						<td><?php echo ".$ver[4]." ?></td>
+						<td><?php echo $ver[5] ?></td>
+						<td><?php echo $ver[6] ?></td>
+						<td><?php echo $ver[7] ?></td>
+						<td><?php echo $ver[8] ?></td>
+						<td><?php echo $individual[$y] ?></td>
+
+					</tr>
+					<?php
+					$y++;
+				}
+				$n++;
+			}
+			while ($n<33){ //CELULAR
+				$sql3="";
+				$sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%'";
+				$i=0;
+				$sql2="(SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing WHERE " . $sql3 . ")
+				UNION ALL
+				(SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing_transfer WHERE " . $sql3 . ")";
+
+				$result2=mysqli_query($conexion,$sql2);
+
+				while($ver2=mysqli_fetch_row($result2)){
+					$valor1[$i]= $ver2[0];
+
+					$hours1 = floor($valor1[$i] / 3600);
+					$mins1 = floor($valor1[$i] / 60 % 60);
+					$secs1 = floor($valor1[$i] % 60);
+
+					if ($secs1>=1){
+						$mins1=$mins1+1;
+						if ($mins1>59){
+							$mins1=0;
+							$hours1=$hours1+1;
+						}
+						$secs1=0;
+					}
+
+					$timeFormat1 = sprintf('%02d:%02d:%02d', $hours1, $mins1, $secs1);
+					ceil($timeFormat1);
+					$timeFormatC[$i]=$hours1*3600+$mins1*60;
+					$i++;
+				}
+				if ($timeFormatC){
+					$valor5=array_sum($timeFormatC);
+					//echo "CELULAR TIEMPO ",$valor5,"\n";
+					$min[$t]=$valor5;
+					$valor5=($valor5/60)*$Tcel;
+					$costo[$t]=round($valor5,2);
+					$celular[$t]=$costo[$t];
+					unset($timeFormatC);
+					$t++;
+				}
+
+				$sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+				" . $sql3 . ")
+				UNION ALL
+				(SELECT chargeduserid,suscribername, date, time, diallednumber,
+				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+				" . $sql3 . ") ORDER BY callduration DESC";
+
+				//echo $sql;
+				$result=mysqli_query($conexion,$sql);
+				while($ver=mysqli_fetch_row($result)){
+					?>
+					<tr>
+						<td><?php echo $ver[0] ?></td>
+						<td><?php echo $ver[1] ?></td>
+						<td><?php echo $ver[2] ?></td>
+						<td><?php echo $ver[3] ?></td>
+						<td><?php echo ".$ver[4]." ?></td>
+						<td><?php echo $ver[5] ?></td>
+						<td><?php echo $ver[6] ?></td>
+						<td><?php echo $ver[7] ?></td>
+						<td><?php echo $ver[8] ?></td>
+						<td><?php echo $individual[$y] ?></td>
+
 					</tr>
 
-				</table>
-			</div>
-		</div>
+					<?php
+					$y++;
+				}
+				$n++;
+			}
+			?>
+		</tr>
+		<td>TOTAL<td><td><td><td><td><td><td><td><?php echo $timeFormat ?><td><?php echo $tarifa ?></td></td>
+	</tr>
+
+</table>
+</div>
+</div>
