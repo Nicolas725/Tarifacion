@@ -1,0 +1,2809 @@
+<?xml version="1.0"?>
+<CallAccountingList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TicketCollector.xsd"><CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>476750432</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>202</ChargedUserID>
+		<SubscriberName>Preatendedor 202</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>011</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:26:00</Time>
+		<CallDuration>00:00:39</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4965431</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>932408640</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>159</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>159</ChargedUserID>
+		<SubscriberName>Sec.Rector</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:26:00</Time>
+		<CallDuration>00:00:33</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>11035448</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>100</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>100</ChargedUserID>
+		<SubscriberName>operadora 100</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:26:00</Time>
+		<CallDuration>00:00:08</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:33</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>614241216</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>203</ChargedUserID>
+		<SubscriberName>Preatendedor 203</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>010</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:26:00</Time>
+		<CallDuration>00:00:35</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4318742</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:03</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>591767680</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>156</ChargedUserID>
+		<SubscriberName>FCM MEntrada</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:26:00</Time>
+		<CallDuration>00:00:26</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>154548692</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>126373352</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>219</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>219</ChargedUserID>
+		<SubscriberName>RECT Titulos</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:27:00</Time>
+		<CallDuration>00:00:25</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>970436544</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>197</ChargedUserID>
+		<SubscriberName>Preatendedor 197</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>005</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:27:00</Time>
+		<CallDuration>00:00:13</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4240259</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:03</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>633108608</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>100</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>100</ChargedUserID>
+		<SubscriberName>operadora 100</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:27:00</Time>
+		<CallDuration>00:00:16</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:25</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>779444672</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>126</ChargedUserID>
+		<SubscriberName>FCJS Administ</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>004</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:26:00</Time>
+		<CallDuration>00:01:40</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>156510686</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>258714496</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>198</ChargedUserID>
+		<SubscriberName>Preatendedor 198</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>003</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:27:00</Time>
+		<CallDuration>00:00:29</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>5180030</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>56275272</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>568</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>127</ChargedUserID>
+		<SubscriberName>FAUD MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>010</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:27:00</Time>
+		<CallDuration>00:01:22</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4318742</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:06</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>855152064</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>193</ChargedUserID>
+		<SubscriberName>Preatendedor 193</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>015</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:28:00</Time>
+		<CallDuration>00:00:44</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>5180030</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:03</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>899341312</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>568</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>127</ChargedUserID>
+		<SubscriberName>FAUD MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>015</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:28:00</Time>
+		<CallDuration>00:00:33</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>5180030</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:09</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>37817828</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>189</ChargedUserID>
+		<SubscriberName>Preatendedor 189</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>007</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:28:00</Time>
+		<CallDuration>00:00:56</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4212065</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:03</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>885254464</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>211</ChargedUserID>
+		<SubscriberName>FI MEntrada</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>003</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:28:00</Time>
+		<CallDuration>00:00:59</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>155438079</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<BusinessCode>0239</BusinessCode>
+		<BusinessCodeName>gil.gerardo</BusinessCodeName>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>706655552</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>9</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>100</ChargedUserID>
+		<SubscriberName>operadora 100</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>007</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:29:00</Time>
+		<CallDuration>00:00:22</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4212065</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:14</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>104823840</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>124</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>124</ChargedUserID>
+		<SubscriberName>FCJS Posgrado</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>005</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:27:00</Time>
+		<CallDuration>00:02:22</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4240259</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:03</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>455116960</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>575</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>182</ChargedUserID>
+		<SubscriberName>FAUD SecDisen</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>011</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:26:00</Time>
+		<CallDuration>00:03:56</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4965431</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:20</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>838732928</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>126</ChargedUserID>
+		<SubscriberName>FCJS Administ</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:28:00</Time>
+		<CallDuration>00:02:14</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4255383</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>220729104</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>154</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>154</ChargedUserID>
+		<SubscriberName>Biblio 1P</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>007</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:29:00</Time>
+		<CallDuration>00:01:17</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4212065</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:07</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>578199616</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>201</ChargedUserID>
+		<SubscriberName>Preatendedor 201</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>009</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:31:00</Time>
+		<CallDuration>00:00:16</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>02604643756</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>844442432</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>110</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>110</ChargedUserID>
+		<SubscriberName>Secretarias</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>009</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:31:00</Time>
+		<CallDuration>00:00:27</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>02604643756</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:11</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>94168312</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>202</ChargedUserID>
+		<SubscriberName>Preatendedor 202</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>012</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:31:00</Time>
+		<CallDuration>00:00:39</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4364769</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>778480000</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>553</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>211</ChargedUserID>
+		<SubscriberName>FI MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>012</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:32:00</Time>
+		<CallDuration>00:00:56</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4364769</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:25</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>36823972</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>216</ChargedUserID>
+		<SubscriberName>FAUD Doctorad</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>014</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:28:00</Time>
+		<CallDuration>00:05:36</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4247581</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>953102976</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>181</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>181</ChargedUserID>
+		<SubscriberName>RECT Sec.Adm</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>009</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:31:00</Time>
+		<CallDuration>00:02:35</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>02604643756</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:07</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>126252096</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>197</ChargedUserID>
+		<SubscriberName>Preatendedor 197</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:34:00</Time>
+		<CallDuration>00:00:21</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4543528</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>860629888</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>198</ChargedUserID>
+		<SubscriberName>Preatendedor 198</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:34:00</Time>
+		<CallDuration>00:00:56</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:03</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>183675712</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>9</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>100</ChargedUserID>
+		<SubscriberName>operadora 100</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:35:00</Time>
+		<CallDuration>00:00:11</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:09</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>528975072</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>553</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>211</ChargedUserID>
+		<SubscriberName>FI MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:34:00</Time>
+		<CallDuration>00:01:38</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4543528</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:17</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>7189712</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>193</ChargedUserID>
+		<SubscriberName>Preatendedor 193</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>004</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:36:00</Time>
+		<CallDuration>00:00:30</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>5744747</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:03</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>660426112</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>219</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>219</ChargedUserID>
+		<SubscriberName>RECT Titulos</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:35:00</Time>
+		<CallDuration>00:01:22</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:01</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>461383680</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>126</ChargedUserID>
+		<SubscriberName>FCJS Administ</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>003</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:35:00</Time>
+		<CallDuration>00:02:01</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>155124058</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>18225160</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>189</ChargedUserID>
+		<SubscriberName>Preatendedor 189</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>011</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:37:00</Time>
+		<CallDuration>00:00:19</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>5465572</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>274667360</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>126</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>126</ChargedUserID>
+		<SubscriberName>FCJS Administ</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:37:00</Time>
+		<CallDuration>00:00:50</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:41</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>53151340</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>211</ChargedUserID>
+		<SubscriberName>FI MEntrada</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>007</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:37:00</Time>
+		<CallDuration>00:00:39</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>153352972</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<BusinessCode>0239</BusinessCode>
+		<BusinessCodeName>gil.gerardo</BusinessCodeName>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>144598512</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>567</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>122</ChargedUserID>
+		<SubscriberName>FCJS MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>004</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:36:00</Time>
+		<CallDuration>00:01:42</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>5744747</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:45</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>245103856</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>567</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>117</ChargedUserID>
+		<SubscriberName>FCJS ProSec.</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>011</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:37:00</Time>
+		<CallDuration>00:01:10</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>5465572</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:33</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>686259904</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>567</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>172</ChargedUserID>
+		<SubscriberName>Tecnolog.167</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>011</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:38:00</Time>
+		<CallDuration>00:00:13</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>5465572</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>924043200</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>201</ChargedUserID>
+		<SubscriberName>Preatendedor 201</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>010</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:38:00</Time>
+		<CallDuration>00:00:36</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4255327</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>503818336</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>140</ChargedUserID>
+		<SubscriberName>FI Laboratorio</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>005</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:36:00</Time>
+		<CallDuration>00:03:01</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4379886</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<BusinessCode>5974</BusinessCode>
+		<BusinessCodeName>diaz.claudio</BusinessCodeName>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>742535168</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>135</ChargedUserID>
+		<SubscriberName>FI Sec.Adm</SubscriberName>
+		<CommunicationType>OutgoingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>007</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:38:00</Time>
+		<CallDuration>00:01:21</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>153352972</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<BusinessCode>0239</BusinessCode>
+		<BusinessCodeName>gil.gerardo</BusinessCodeName>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>779195264</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>211</ChargedUserID>
+		<SubscriberName>FI MEntrada</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>003</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:39:00</Time>
+		<CallDuration>00:00:28</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>156168064</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<BusinessCode>0239</BusinessCode>
+		<BusinessCodeName>gil.gerardo</BusinessCodeName>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>403159584</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>203</ChargedUserID>
+		<SubscriberName>Preatendedor 203</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>003</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:39:00</Time>
+		<CallDuration>00:00:11</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>01153554250</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>780353024</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>202</ChargedUserID>
+		<SubscriberName>Preatendedor 202</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>005</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:39:00</Time>
+		<CallDuration>00:00:19</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>3478916</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>664449664</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>585</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>156</ChargedUserID>
+		<SubscriberName>FCM MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>010</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:39:00</Time>
+		<CallDuration>00:01:16</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4255327</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:20</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>109815144</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>127</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>127</ChargedUserID>
+		<SubscriberName>FAUD MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>005</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:40:00</Time>
+		<CallDuration>00:00:47</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>3478916</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>885176896</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>197</ChargedUserID>
+		<SubscriberName>Preatendedor 197</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>015</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:40:00</Time>
+		<CallDuration>00:00:26</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4264027</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>119566608</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>193</ChargedUserID>
+		<SubscriberName>Preatendedor 193</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>012</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:41:00</Time>
+		<CallDuration>00:00:11</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>01153554210</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>948548032</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>198</ChargedUserID>
+		<SubscriberName>Preatendedor 198</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>007</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:41:00</Time>
+		<CallDuration>00:00:55</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>3478916</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>105905976</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>189</ChargedUserID>
+		<SubscriberName>Preatendedor 189</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:42:00</Time>
+		<CallDuration>00:00:19</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>6861838</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>697766272</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>159</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>159</ChargedUserID>
+		<SubscriberName>Sec.Rector</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>015</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:40:00</Time>
+		<CallDuration>00:01:31</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4264027</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>792990464</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>201</ChargedUserID>
+		<SubscriberName>Preatendedor 201</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:42:00</Time>
+		<CallDuration>00:00:19</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>200074288</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>567</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>106</ChargedUserID>
+		<SubscriberName>Tecnologia167</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>011</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:39:00</Time>
+		<CallDuration>00:03:25</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>5465572</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>476246240</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>100</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>100</ChargedUserID>
+		<SubscriberName>operadora 100</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:42:00</Time>
+		<CallDuration>00:00:14</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>6861838</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:01</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>829814464</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>185</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>185</ChargedUserID>
+		<SubscriberName>RECT Fax</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:42:00</Time>
+		<CallDuration>00:00:22</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:03</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>153177264</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>127</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>127</ChargedUserID>
+		<SubscriberName>FAUD MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:42:00</Time>
+		<CallDuration>00:00:40</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:22</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>602498368</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>202</ChargedUserID>
+		<SubscriberName>Preatendedor 202</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>010</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:42:00</Time>
+		<CallDuration>00:00:53</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>3478916</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>690444288</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>146</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>146</ChargedUserID>
+		<SubscriberName>IntendenciaUM</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:42:00</Time>
+		<CallDuration>00:01:24</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>6861838</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>336852960</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>100</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>100</ChargedUserID>
+		<SubscriberName>operadora 100</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:44:00</Time>
+		<CallDuration>00:00:03</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>6861838</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:01:24</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>131473424</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>567</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>163</ChargedUserID>
+		<SubscriberName>FCJS Sec.Acad</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>004</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:38:00</Time>
+		<CallDuration>00:05:47</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>5744747</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>697633984</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>203</ChargedUserID>
+		<SubscriberName>Preatendedor 203</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>005</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:43:00</Time>
+		<CallDuration>00:00:52</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>02634408437</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>997279104</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>575</InitialUserID>
+		<ChargedUserType>G</ChargedUserType>
+		<ChargedUserID>575</ChargedUserID>
+		<SubscriberName>FAUD-Ext-8</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>010</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:43:00</Time>
+		<CallDuration>00:01:02</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>3478916</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>0</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>592857152</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>301</ChargedUserID>
+		<SubscriberName>Comunicacion</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>014</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:44:00</Time>
+		<CallDuration>00:00:15</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>026415614876</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>715859200</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>197</ChargedUserID>
+		<SubscriberName>Preatendedor 197</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>015</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:44:00</Time>
+		<CallDuration>00:00:36</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>3478916</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>271946432</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>198</ChargedUserID>
+		<SubscriberName>Preatendedor 198</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>007</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:45:00</Time>
+		<CallDuration>00:00:33</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4211598</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:03</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>646008448</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>193</ChargedUserID>
+		<SubscriberName>Preatendedor 193</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>012</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:45:00</Time>
+		<CallDuration>00:00:17</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4364769</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>860457664</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>301</ChargedUserID>
+		<SubscriberName>Comunicacion</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>014</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:45:00</Time>
+		<CallDuration>00:00:25</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>026415614876</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>517050272</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>575</InitialUserID>
+		<ChargedUserType>G</ChargedUserType>
+		<ChargedUserID>575</ChargedUserID>
+		<SubscriberName>FAUD-Ext-8</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>015</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:45:00</Time>
+		<CallDuration>00:00:38</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>3478916</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>0</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>332268352</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>189</ChargedUserID>
+		<SubscriberName>Preatendedor 189</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>009</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:45:00</Time>
+		<CallDuration>00:00:34</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4460614</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>784500928</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>201</ChargedUserID>
+		<SubscriberName>Preatendedor 201</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:46:00</Time>
+		<CallDuration>00:00:18</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>6591000</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>20868614</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>202</ChargedUserID>
+		<SubscriberName>Preatendedor 202</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:46:00</Time>
+		<CallDuration>00:00:17</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>74803568</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>126</ChargedUserID>
+		<SubscriberName>FCJS Administ</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>003</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:42:00</Time>
+		<CallDuration>00:03:59</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4255383</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>563696064</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>185</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>185</ChargedUserID>
+		<SubscriberName>RECT Fax</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:46:00</Time>
+		<CallDuration>00:00:22</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>6591000</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:04</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>424028224</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>110</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>110</ChargedUserID>
+		<SubscriberName>Secretarias</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:46:00</Time>
+		<CallDuration>00:00:36</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:18</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>855156608</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>127</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>127</ChargedUserID>
+		<SubscriberName>FAUD MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:47:00</Time>
+		<CallDuration>00:00:40</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>6591000</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:05</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>228145776</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>197</ChargedUserID>
+		<SubscriberName>Preatendedor 197</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>004</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:47:00</Time>
+		<CallDuration>00:00:08</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>02664309594</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>533843328</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>585</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>156</ChargedUserID>
+		<SubscriberName>FCM MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>007</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:45:00</Time>
+		<CallDuration>00:02:34</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4211598</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:12</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>740333440</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>203</ChargedUserID>
+		<SubscriberName>Preatendedor 203</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>002</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:46:00</Time>
+		<CallDuration>00:01:32</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4294193</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>347712384</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>124</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>124</ChargedUserID>
+		<SubscriberName>FCJS Posgrado</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>009</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:46:00</Time>
+		<CallDuration>00:02:14</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4460614</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>482391392</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>219</ChargedUserID>
+		<SubscriberName>RECT Titulos</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>003</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:48:00</Time>
+		<CallDuration>00:00:23</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4258169</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>846239424</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>198</ChargedUserID>
+		<SubscriberName>Preatendedor 198</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>004</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:48:00</Time>
+		<CallDuration>00:00:37</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4135001</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>45478620</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>553</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>211</ChargedUserID>
+		<SubscriberName>FI MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>012</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:45:00</Time>
+		<CallDuration>00:03:07</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4364769</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:09</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>275381824</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>236</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>236</ChargedUserID>
+		<SubscriberName>RRHH Sec</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:47:00</Time>
+		<CallDuration>00:01:48</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:04</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>46313716</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>193</ChargedUserID>
+		<SubscriberName>Preatendedor 193</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>011</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:49:00</Time>
+		<CallDuration>00:00:14</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>01153554230</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:03</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>521724864</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>126</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>126</ChargedUserID>
+		<SubscriberName>FCJS Administ</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>002</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:48:00</Time>
+		<CallDuration>00:02:41</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4294193</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:02:24</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>105196280</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>189</ChargedUserID>
+		<SubscriberName>Preatendedor 189</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:50:00</Time>
+		<CallDuration>00:00:16</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:03</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>199490976</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>567</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>164</ChargedUserID>
+		<SubscriberName>FCJS Secret.</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>004</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:48:00</Time>
+		<CallDuration>00:02:20</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4135001</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:32</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>124223216</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>128</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>128</ChargedUserID>
+		<SubscriberName>FAUD Sec.Adm</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:51:00</Time>
+		<CallDuration>00:00:36</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>795640576</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>201</ChargedUserID>
+		<SubscriberName>Preatendedor 201</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>010</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:51:00</Time>
+		<CallDuration>00:00:12</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>01153554210</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>536343936</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>126</ChargedUserID>
+		<SubscriberName>FCJS Administ</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>003</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:51:00</Time>
+		<CallDuration>00:00:18</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4253529</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>255696624</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>202</ChargedUserID>
+		<SubscriberName>Preatendedor 202</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>015</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:51:00</Time>
+		<CallDuration>00:00:33</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>5252207</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>493274560</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>560</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>122</ChargedUserID>
+		<SubscriberName>FCJS MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>005</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:44:00</Time>
+		<CallDuration>00:08:06</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>02634408437</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:08</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>533623040</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>203</ChargedUserID>
+		<SubscriberName>Preatendedor 203</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:52:00</Time>
+		<CallDuration>00:00:44</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>848553728</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>197</ChargedUserID>
+		<SubscriberName>Preatendedor 197</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>007</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:53:00</Time>
+		<CallDuration>00:00:15</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>02664340075</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>209133744</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>553</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>211</ChargedUserID>
+		<SubscriberName>FI MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>015</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:52:00</Time>
+		<CallDuration>00:01:45</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>5252207</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:34</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>805569472</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>299</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>193</ChargedUserID>
+		<SubscriberName>Preatendedor 193</SubscriberName>
+		<CommunicationType>Incoming</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>009</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:53:00</Time>
+		<CallDuration>00:00:30</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>*******</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:02</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>494562144</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>G</InitialUserType>
+		<InitialUserID>568</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>127</ChargedUserID>
+		<SubscriberName>FAUD MEntrada</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>006</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:53:00</Time>
+		<CallDuration>00:00:57</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:13</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>69591424</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<InitialUserType>A</InitialUserType>
+		<InitialUserID>124</InitialUserID>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>124</ChargedUserID>
+		<SubscriberName>FCJS Posgrado</SubscriberName>
+		<CommunicationType>IncomingTransfer</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>002</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:50:00</Time>
+		<CallDuration>00:03:19</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<AdditionalServices>X</AdditionalServices>
+		<DialledNumber>4294193</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:06</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+	<CallAccounting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAPTicket_V001.001.xsd">
+		<OmniPCXOffice>
+			<SoftwareVersion>3EH30504FDAA ALZAR820/091.001</SoftwareVersion>
+			<CPUIPAddress>192.168.92.254</CPUIPAddress>
+		</OmniPCXOffice>
+		<Checksum>322619744</Checksum>
+		<TicketType>Call</TicketType>
+		<CompanyName>UM</CompanyName>
+		<ChargedUserType>A</ChargedUserType>
+		<ChargedUserID>126</ChargedUserID>
+		<SubscriberName>FCJS Administ</SubscriberName>
+		<CommunicationType>Outgoing</CommunicationType>
+		<TrunkType>L</TrunkType>
+		<TrunkID>013</TrunkID>
+		<Date>2017-02-20</Date>
+		<Time>17:53:00</Time>
+		<CallDuration>00:00:44</CallDuration>
+		<TaxesAmount>0</TaxesAmount>
+		<Service>ST</Service>
+		<DialledNumber>4135000</DialledNumber>
+		<DiallingMode>M</DiallingMode>
+		<RingingDuration>00:00:00</RingingDuration>
+		<Cost>0.00</Cost>
+		<Entity>1</Entity>
+		<Currency>ARP</Currency>
+	</CallAccounting>
+</CallAccountingList>
