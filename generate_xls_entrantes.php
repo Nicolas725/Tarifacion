@@ -28,8 +28,9 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
       </tr>
 
       <?php
-      //error_reporting(E_ERROR | E_PARSE); //hace que no se muestren los warning
+      error_reporting(E_ERROR | E_PARSE); //hace que no se muestren los warning
       if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
+        $s=0;
         $sql3="";
         $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1' AND nombreSede= '$sede1' AND nombreDepar='$depar1'";
         $i=0;
@@ -82,17 +83,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -100,8 +102,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($option && $fecha && $fecha1 && $sede1 ){ //DOS
+      }
+      else if ($option && $fecha && $fecha1 && $sede1 ){ //DOS
+        $s=0;
         $sql3="";
         $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1' AND nombreSede= '$sede1'";
         $i=0;
@@ -154,17 +159,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -172,8 +178,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($option && $fecha && $fecha1 && $depar1 ){ //TRES
+      }
+      else if ($option && $fecha && $fecha1 && $depar1 ){ //TRES
+        $s=0;
         $sql3="";
         $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1' AND nombreDepar= '$depar1'";
         $i=0;
@@ -226,17 +235,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -244,8 +254,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($option && $sede1 && $depar1 ){ //CUATRO
+      }
+      else if ($option && $sede1 && $depar1 ){ //CUATRO
+        $s=0;
         $sql3="";
         $sql3 .="chargeduserid=".$option." AND nombreSede= '$sede1' AND nombreDepar='$depar1'";
         $i=0;
@@ -298,17 +311,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -316,8 +330,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($fecha && $fecha1 && $sede1 && $depar1 ){ //CINCO
+      }
+      else if ($fecha && $fecha1 && $sede1 && $depar1 ){ //CINCO
+        $s=0;
         $sql3="";
         $sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND nombreSede= '$sede1' AND nombreDepar='$depar1'";
         $i=0;
@@ -370,17 +387,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -388,8 +406,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($option && $fecha && $fecha1){ //SEIS
+      }
+      else if ($option && $fecha && $fecha1){ //SEIS
+        $s=0;
         $sql3="";
         $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1'";
         $i=0;
@@ -442,17 +463,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -460,8 +482,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($option && $sede1){ //SIETE
+      }
+      else if ($option && $sede1){ //SIETE
+        $s=0;
         $sql3="";
         $sql3 .="chargeduserid=".$option." AND nombreSede= '$sede1'";
         $i=0;
@@ -514,17 +539,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -532,8 +558,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($option && $depar1){ //OCHO
+      }
+      else if ($option && $depar1){ //OCHO
+        $s=0;
         $sql3="";
         $sql3 .="chargeduserid=".$option." AND nombreDepar= '$depar1'";
         $i=0;
@@ -586,17 +615,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -604,8 +634,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($fecha && $fecha1 && $sede1){ //NUEVE
+      }
+      else if ($fecha && $fecha1 && $sede1){ //NUEVE
+        $s=0;
         $sql3="";
         $sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND nombreSede= '$sede1'";
         $i=0;
@@ -658,17 +691,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -676,8 +710,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($fecha && $fecha1 && $depar1){ //DIEZ
+      }
+      else if ($fecha && $fecha1 && $depar1){ //DIEZ
+        $s=0;
         $sql3="";
         $sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND nombreDepar= '$depar1'";
         $i=0;
@@ -730,17 +767,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -748,8 +786,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($sede1 && $depar1 ){ //ONCE
+      }
+      else if ($sede1 && $depar1 ){ //ONCE
+        $s=0;
         $sql3="";
         $sql3 .="nombreSede= '$sede1' AND nombreDepar= '$depar1'";
         $i=0;
@@ -802,17 +843,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -820,8 +862,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($option){ //DOCE
+      }
+      else if ($option){ //DOCE
+        $s=0;
         $sql3="";
         $sql3 .="chargeduserid=".$option."";
         $i=0;
@@ -875,17 +920,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -893,8 +939,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($fecha && $fecha1){ //TRECE
+      }
+      else if ($fecha && $fecha1){ //TRECE
+        $s=0;
         $sql3="";
         $sql3 .="date BETWEEN '$fecha' AND '$fecha1'";
         $i=0;
@@ -948,17 +997,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -966,8 +1016,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($sede1){ //CATORCE
+      }
+      else if ($sede1){ //CATORCE
+        $s=0;
         $sql3="";
         $sql3 .="nombreSede= '$sede1'";
         $i=0;
@@ -1020,17 +1073,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -1038,8 +1092,11 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
-      } else if ($depar1 ){ //QUINCE
+      }
+      else if ($depar1 ){ //QUINCE
+        $s=0;
         $sql3="";
         $sql3 .="nombreDepar= '$depar1'";
         $i=0;
@@ -1092,17 +1149,18 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
+          $hola[$s] .= "'$ver[4]";
           ?>
           <tr>
             <td><?php echo $ver[0] ?></td>
             <td><?php echo $ver[1] ?></td>
             <td><?php echo $ver[2] ?></td>
             <td><?php echo $ver[3] ?></td>
-            <td><?php echo $ver[4] ?></td>
+            <td><?php echo $hola[$s] ?></td>
             <td><?php echo $ver[5] ?></td>
             <td><?php echo $ver[6] ?></td>
             <td><?php echo $ver[7] ?></td>
@@ -1110,6 +1168,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 
           </tr>
           <?php
+          $s++;
         }
       }
       ?>

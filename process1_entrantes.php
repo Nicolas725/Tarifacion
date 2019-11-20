@@ -30,7 +30,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
       </tr>
 
       <?php
-      //error_reporting(E_ERROR | E_PARSE); //hace que no se muestren los warning
+      error_reporting(E_ERROR | E_PARSE); //hace que no se muestren los warning
       if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
         $sql3="";
         $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1' AND nombreSede= '$sede1' AND nombreDepar='$depar1'";
@@ -84,7 +84,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -157,7 +157,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -229,7 +229,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -301,7 +301,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -373,7 +373,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -445,7 +445,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -517,7 +517,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -589,7 +589,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -661,7 +661,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -733,7 +733,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -805,7 +805,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -878,7 +878,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -951,7 +951,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -1023,7 +1023,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){
@@ -1095,7 +1095,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         UNION ALL
         (SELECT chargeduserid,suscribername, date, time, diallednumber,
         communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-        " . $sql3 . ") ORDER BY callduration DESC";
+        " . $sql3 . ") ORDER BY callduration";
         //echo $sql;
         $result=mysqli_query($conexion,$sql);
         while($ver=mysqli_fetch_row($result)){

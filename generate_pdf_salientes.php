@@ -1,8 +1,7 @@
 <?php
 //include conexionection file
 include("./conexion.php");
-require ("fpdf/fpdf.php");
-
+require "/usr/share/php/fpdf/fpdf.php";
 
 class PDF extends FPDF
 {
@@ -10,7 +9,7 @@ class PDF extends FPDF
   function Header()
   {
     // Logo
-    $this->Image('C:\xampp\htdocs\www\TESIS\Tarifacion\imagenes\UM_logo.jpg',10,10,50);
+    $this->Image('/var/www/html/PAGINA_1/Tarifacion/imagenes/UM_logo.jpg',10,10,50);
 
     $this->SetFont('Arial','B',13);
     // Move to the right
@@ -55,30 +54,30 @@ $Tlocal = isset($_POST['Tlocal']) ? $_POST['Tlocal'] : false;
 $Tcel = isset($_POST['Tcel']) ? $_POST['Tcel'] : false;
 $individual = isset($_POST['costos']) ? $_POST['costos'] : false;
 
-
+$Prefijo=array('00',
+'011','0221','0223','0291','03833',
+'0351','03783','03722','02965','0343',
+'03717','0388','02954','03822','0261',
+'03752','0299','02920','0387','0264',
+'02652','02966','0342','0341','0385',
+'0381','02901',
+'3','4','5','6',
+'15');
+$h=0;
+$n=0;
+$t=0;
+$l=0;
+$y=0;
 
 if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
-  $h=0;
-  $sql3="";
-  $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1' AND nombreSede= '$sede1' AND nombreDepar='$depar1'";
+
   $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -111,18 +110,35 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
-    $pdf->Cell(28,9,$individual[$h],1);
-    $h++;
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%' AND nombreSede= '$sede1' AND nombreDepar='$depar1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -139,30 +155,16 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   $pdf->Cell(28,9,$tarifa,1);
 
   $pdf->Output();
-
 }
 else if ($option && $fecha && $fecha1 && $sede1 ){ //DOS
 
-  $sql3="";
-  $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1' AND nombreSede= '$sede1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -195,16 +197,35 @@ else if ($option && $fecha && $fecha1 && $sede1 ){ //DOS
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%' AND nombreSede= '$sede1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -221,30 +242,16 @@ else if ($option && $fecha && $fecha1 && $sede1 ){ //DOS
   $pdf->Cell(28,9,$tarifa,1);
 
   $pdf->Output();
-
 }
 else if ($option && $fecha && $fecha1 && $depar1 ){ //TRES
 
-  $sql3="";
-  $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1' AND nombreDepar= '$depar1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -277,16 +284,35 @@ else if ($option && $fecha && $fecha1 && $depar1 ){ //TRES
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%' AND nombreDepar= '$depar1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -307,26 +333,13 @@ else if ($option && $fecha && $fecha1 && $depar1 ){ //TRES
 }
 else if ($option && $sede1 && $depar1 ){ //CUATRO
 
-  $sql3="";
-  $sql3 .="chargeduserid=".$option." AND nombreSede= '$sede1' AND nombreDepar='$depar1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -359,16 +372,35 @@ else if ($option && $sede1 && $depar1 ){ //CUATRO
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="chargeduserid=".$option." AND diallednumber LIKE '$Prefijo[$n]%' AND nombreSede= '$sede1' AND nombreDepar='$depar1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -389,26 +421,13 @@ else if ($option && $sede1 && $depar1 ){ //CUATRO
 }
 else if ($fecha && $fecha1 && $sede1 && $depar1 ){ //CINCO
 
-  $sql3="";
-  $sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND nombreSede= '$sede1' AND nombreDepar='$depar1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -441,16 +460,35 @@ else if ($fecha && $fecha1 && $sede1 && $depar1 ){ //CINCO
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%' AND nombreSede= '$sede1' AND nombreDepar='$depar1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -471,26 +509,13 @@ else if ($fecha && $fecha1 && $sede1 && $depar1 ){ //CINCO
 }
 else if ($option && $fecha && $fecha1){ //SEIS
 
-  $sql3="";
-  $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -523,16 +548,35 @@ else if ($option && $fecha && $fecha1){ //SEIS
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="chargeduserid=".$option." AND date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -553,26 +597,13 @@ else if ($option && $fecha && $fecha1){ //SEIS
 }
 else if ($option && $sede1){ //SIETE
 
-  $sql3="";
-  $sql3 .="chargeduserid=".$option." AND nombreSede= '$sede1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -605,16 +636,35 @@ else if ($option && $sede1){ //SIETE
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="chargeduserid=".$option." AND diallednumber LIKE '$Prefijo[$n]%' AND nombreSede= '$sede1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -635,26 +685,13 @@ else if ($option && $sede1){ //SIETE
 }
 else if ($option && $depar1){ //OCHO
 
-  $sql3="";
-  $sql3 .="chargeduserid=".$option." AND nombreDepar= '$depar1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -687,16 +724,35 @@ else if ($option && $depar1){ //OCHO
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="chargeduserid=".$option." AND diallednumber LIKE '$Prefijo[$n]%' AND nombreDepar= '$depar1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -717,26 +773,13 @@ else if ($option && $depar1){ //OCHO
 }
 else if ($fecha && $fecha1 && $sede1){ //NUEVE
 
-  $sql3="";
-  $sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND nombreSede= '$sede1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -769,16 +812,35 @@ else if ($fecha && $fecha1 && $sede1){ //NUEVE
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%' AND nombreSede= '$sede1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -798,26 +860,13 @@ else if ($fecha && $fecha1 && $sede1){ //NUEVE
 }
 else if ($fecha && $fecha1 && $depar1){ //DIEZ
 
-  $sql3="";
-  $sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND nombreDepar= '$depar1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -850,16 +899,35 @@ else if ($fecha && $fecha1 && $depar1){ //DIEZ
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%' AND nombreDepar= '$depar1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -880,26 +948,13 @@ else if ($fecha && $fecha1 && $depar1){ //DIEZ
 }
 else if ($sede1 && $depar1 ){ //ONCE
 
-  $sql3="";
-  $sql3 .="nombreSede= '$sede1' AND nombreDepar= '$depar1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -932,16 +987,35 @@ else if ($sede1 && $depar1 ){ //ONCE
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="diallednumber LIKE '$Prefijo[$n]%' AND nombreSede= '$sede1' AND nombreDepar= '$depar1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -962,26 +1036,13 @@ else if ($sede1 && $depar1 ){ //ONCE
 }
 else if ($option){ //DOCE
 
-  $sql3="";
-  $sql3 .="chargeduserid=".$option."";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -1014,16 +1075,35 @@ else if ($option){ //DOCE
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="chargeduserid=".$option." AND diallednumber LIKE '$Prefijo[$n]%'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -1044,26 +1124,13 @@ else if ($option){ //DOCE
 }
 else if ($fecha && $fecha1){ //TRECE
 
-  $sql3="";
-  $sql3 .="date BETWEEN '$fecha' AND '$fecha1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ")";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -1096,16 +1163,35 @@ else if ($fecha && $fecha1){ //TRECE
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -1126,26 +1212,13 @@ else if ($fecha && $fecha1){ //TRECE
 }
 else if ($sede1){ //CATORCE
 
-  $sql3="";
-  $sql3 .="nombreSede= '$sede1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -1178,16 +1251,35 @@ else if ($sede1){ //CATORCE
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="diallednumber LIKE '$Prefijo[$n]%' AND nombreSede= '$sede1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);
@@ -1208,26 +1300,13 @@ else if ($sede1){ //CATORCE
 }
 else if ($depar1 ){ //QUINCE
 
-  $sql3="";
-  $sql3 .="nombreDepar= '$depar1'";
-  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion');
-  $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
-  " . $sql3 . ")
-  UNION ALL
-  (SELECT chargeduserid,suscribername, date, time, diallednumber,
-  communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
-  //echo $sql;
-  $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+  $display_heading = array('chargeduserid'=>'Interno', 'suscribername'=> 'Nombre', 'date'=> 'Fecha', 'time'=> 'Hora', 'diallednumber'=>'Destino', 'communicationtype'=>'Tipo', 'nombreSede'=>'Sede', 'nombreDepar'=>'Departamento','callduration'=> 'Duracion','Costo');
 
   $pdf = new PDF('L');
   //header
   $pdf->AddPage();
   //foter page
   $pdf->AliasNbPages();
-  // Begin with regular font
-
   $pdf->SetFont('Arial','B',12);
   $pdf->Cell(28,9,'',1);
   $pdf->Cell(28,9,'Internacional',1);
@@ -1260,16 +1339,35 @@ else if ($depar1 ){ //QUINCE
   $pdf->Ln();
 
 
-
   $pdf->SetFont('Arial','B',10);
   foreach($display_heading as $heading) {
     $pdf->Cell(28,9,$heading,1);
   }
-  foreach($result as $row) {
-    $pdf->SetFont('Arial','',10);
-    $pdf->Ln();
-    foreach($row as $column)
-    $pdf->Cell(28,9,$column,1);
+
+  while ($n<33) {
+    // code...
+
+    $sql3="";
+    $sql3 .="diallednumber LIKE '$Prefijo[$n]%' AND nombreDepar= '$depar1'";
+    $sql="(SELECT chargeduserid, suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing WHERE
+    " . $sql3 . ")
+    UNION ALL
+    (SELECT chargeduserid,suscribername, date, time, diallednumber,
+    communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
+    " . $sql3 . ")";
+    //echo $sql;
+    $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
+
+    foreach($result as $row) {
+      $pdf->SetFont('Arial','',10);
+      $pdf->Ln();
+      foreach($row as $column)
+      $pdf->Cell(28,9,$column,1);
+      $pdf->Cell(28,9,$individual[$h],1);
+      $h++;
+    }
+    $n++;
   }
 
   $pdf->SetFont('Arial','B',12);

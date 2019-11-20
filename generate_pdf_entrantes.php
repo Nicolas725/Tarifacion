@@ -1,7 +1,7 @@
 <?php
 //include conexionection file
 include("./conexion.php");
-require ("fpdf/fpdf.php");
+require "/usr/share/php/fpdf/fpdf.php";
 
 
 class PDF extends FPDF
@@ -10,7 +10,7 @@ class PDF extends FPDF
   function Header()
   {
     // Logo
-    $this->Image('C:\xampp\htdocs\www\TESIS\Tarifacion\imagenes\UM_logo.jpg',10,10,50);
+    $this->Image('/var/www/html/PAGINA_1/Tarifacion/imagenes/UM_logo.jpg',10,10,50);
 
     $this->SetFont('Arial','B',13);
     // Move to the right
@@ -61,7 +61,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -104,7 +104,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -147,7 +147,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -190,7 +190,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -233,7 +233,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -276,7 +276,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -319,7 +319,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -362,7 +362,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -405,7 +405,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -448,7 +448,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -491,7 +491,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -534,7 +534,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -577,7 +577,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -620,7 +620,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
@@ -663,7 +663,7 @@ if ($option && $fecha && $fecha1 && $sede1 && $depar1){ //UNO
   UNION ALL
   (SELECT chargeduserid,suscribername, date, time, diallednumber,
   communicationtype, nombreSede, nombreDepar, callduration FROM tickets_incoming_transfer WHERE
-  " . $sql3 . ") ORDER BY callduration DESC";
+  " . $sql3 . ") ORDER BY callduration";
   //echo $sql;
   $result = mysqli_query($conexion,$sql) or die("database error:". mysqli_error($conexion));
 
