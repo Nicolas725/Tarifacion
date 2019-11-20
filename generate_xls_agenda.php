@@ -94,6 +94,7 @@ $costo=[];
 			$t=0;
 			$l=0;
 			$y=0;
+			$s=0;
 			while ($n<1){ //INTERNACIONAL
 				$sql3="";
 				$sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND diallednumber LIKE '$Prefijo[$n]%'";
@@ -140,17 +141,18 @@ $costo=[];
 				UNION ALL
 				(SELECT chargeduserid,suscribername, date, time, diallednumber,
 				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-				" . $sql3 . ") ORDER BY callduration DESC";
+				" . $sql3 . ")";
 
 				$result=mysqli_query($conexion,$sql);
 				while($ver=mysqli_fetch_row($result)){
+					$hola[$s] .= "'$ver[4]";
 					?>
 					<tr>
 						<td><?php echo $ver[0] ?></td>
 						<td><?php echo $ver[1] ?></td>
 						<td><?php echo $ver[2] ?></td>
 						<td><?php echo $ver[3] ?></td>
-						<td><?php echo ".$ver[4]." ?></td>
+						<td><?php echo $hola[$s] ?></td>
 						<td><?php echo $ver[5] ?></td>
 						<td><?php echo $ver[6] ?></td>
 						<td><?php echo $ver[7] ?></td>
@@ -160,6 +162,7 @@ $costo=[];
 					</tr>
 					<?php
 					$y++;
+					$s++;
 				}
 				$n++;
 			}
@@ -212,17 +215,18 @@ $costo=[];
 				UNION ALL
 				(SELECT chargeduserid,suscribername, date, time, diallednumber,
 				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-				" . $sql3 . ") ORDER BY callduration DESC";
+				" . $sql3 . ")";
 
 				$result=mysqli_query($conexion,$sql);
 				while($ver=mysqli_fetch_row($result)){
+					$hola[$s] .= "'$ver[4]";
 					?>
 					<tr>
 						<td><?php echo $ver[0] ?></td>
 						<td><?php echo $ver[1] ?></td>
 						<td><?php echo $ver[2] ?></td>
 						<td><?php echo $ver[3] ?></td>
-						<td><?php echo ".$ver[4]." ?></td>
+						<td><?php echo $hola[$s] ?></td>
 						<td><?php echo $ver[5] ?></td>
 						<td><?php echo $ver[6] ?></td>
 						<td><?php echo $ver[7] ?></td>
@@ -232,6 +236,7 @@ $costo=[];
 					</tr>
 					<?php
 					$y++;
+					$s++;
 				}
 				$n++;
 			}
@@ -284,17 +289,18 @@ $costo=[];
 				UNION ALL
 				(SELECT chargeduserid,suscribername, date, time, diallednumber,
 				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-				" . $sql3 . ") ORDER BY callduration DESC";
+				" . $sql3 . ")";
 
 				$result=mysqli_query($conexion,$sql);
 				while($ver=mysqli_fetch_row($result)){
+					$hola[$s] .= "'$ver[4]";
 					?>
 					<tr>
 						<td><?php echo $ver[0] ?></td>
 						<td><?php echo $ver[1] ?></td>
 						<td><?php echo $ver[2] ?></td>
 						<td><?php echo $ver[3] ?></td>
-						<td><?php echo ".$ver[4]." ?></td>
+						<td><?php echo $hola[$s] ?></td>
 						<td><?php echo $ver[5] ?></td>
 						<td><?php echo $ver[6] ?></td>
 						<td><?php echo $ver[7] ?></td>
@@ -304,6 +310,7 @@ $costo=[];
 					</tr>
 					<?php
 					$y++;
+					$s++;
 				}
 				$n++;
 			}
@@ -355,18 +362,18 @@ $costo=[];
 				UNION ALL
 				(SELECT chargeduserid,suscribername, date, time, diallednumber,
 				communicationtype, nombreSede, nombreDepar, callduration FROM tickets_outgoing_transfer WHERE
-				" . $sql3 . ") ORDER BY callduration DESC";
+				" . $sql3 . ")";
 
-				//echo $sql;
 				$result=mysqli_query($conexion,$sql);
 				while($ver=mysqli_fetch_row($result)){
+					$hola[$s] .= "'$ver[4]";
 					?>
 					<tr>
 						<td><?php echo $ver[0] ?></td>
 						<td><?php echo $ver[1] ?></td>
 						<td><?php echo $ver[2] ?></td>
 						<td><?php echo $ver[3] ?></td>
-						<td><?php echo ".$ver[4]." ?></td>
+						<td><?php echo $hola[$s] ?></td>
 						<td><?php echo $ver[5] ?></td>
 						<td><?php echo $ver[6] ?></td>
 						<td><?php echo $ver[7] ?></td>
@@ -374,9 +381,9 @@ $costo=[];
 						<td><?php echo $individual[$y] ?></td>
 
 					</tr>
-
 					<?php
 					$y++;
+					$s++;
 				}
 				$n++;
 			}
