@@ -1,11 +1,16 @@
 <?php
 include("./conexion.php");
+session_start();
+
 $Tinter = isset($_POST['inter']) ? $_POST['inter'] : false;
 $Tnacion = isset($_POST['nacion']) ? $_POST['nacion'] : false;
 $Tlocal = isset($_POST['local']) ? $_POST['local'] : false;
 $Tcel = isset($_POST['cel']) ? $_POST['cel'] : false;
 $fecha = isset($_POST['dateFrom']) ? $_POST['dateFrom'] : false;
 $fecha1 = isset($_POST['dateTo']) ? $_POST['dateTo'] : false;
+
+$_SESSION['dateFrom'] = $fecha;
+$_SESSION['dateTo'] = $fecha1;
 
 $Prefijo=array('00',
 '011','0221','0223','0291','03833',
@@ -421,7 +426,7 @@ $individualC=[];
 	?>
 	<br>
 	<br>
-	La cantidad de minutos hablados es:
+	La cantidad de tiempo hablado es (hh/mm/ss):
 	<?php
 	echo $timeFormat;
 	?>
@@ -544,5 +549,4 @@ $individualC=[];
 			$('#cargaBarrasRC').load('barraRC.php');
 			$('#cargaBarrasE').load('barraE.php');
 		});
-
 		</script>

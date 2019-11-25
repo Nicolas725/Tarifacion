@@ -1,6 +1,9 @@
 <?php
 include("./conexion.php");
 error_reporting(E_ERROR | E_PARSE); //hace que no se muestren los warning
+session_start();
+$fecha=$_SESSION['dateFrom'];
+$fecha1=$_SESSION['dateTo'];
 
 $sedes=array();
 $datos=array(); //monto
@@ -17,7 +20,7 @@ $t=0;
 $i=0;
 for ($p=0; $p < $n ; $p++) {
   $sql3="";
-  $sql3 .="nombreSede LIKE '$sedes[$p]%'";
+  $sql3 .="date BETWEEN '$fecha' AND '$fecha1' AND nombreSede LIKE '$sedes[$p]%'";
   $sql2="(SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing WHERE " . $sql3 . ")
   UNION ALL
   (SELECT TIME_TO_SEC((`callduration`)) FROM tickets_outgoing_transfer WHERE " . $sql3 . ")";
@@ -51,7 +54,7 @@ for ($p=0; $p < $n ; $p++) {
     $valor2=array_sum($timeFormat);
     //echo "TIEMPO ",$valor2,"\n";
     //$min[$t]=$valor2."|".$sedes[$p];
-    $min[$t]=$valor2;
+    $min[$t]=$valor2/60;
     //echo $min[$t],"\n";
 
     unset($timeFormat);
@@ -101,7 +104,7 @@ var layout = {
       color: 'rgb(107, 107, 107)'
     }},
   yaxis: {
-    title: 'Tiempo en segundos',
+    title: 'Tiempo en min',
     titlefont: {
       size: 16,
       color: 'rgb(107, 107, 107)'

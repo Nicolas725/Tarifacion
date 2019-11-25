@@ -70,7 +70,7 @@ $costo=[];
     ?>
     <br>
     <br>
-    La cantidad de minutos hablados es:
+    La cantidad de tiempo hablado es (hh/mm/ss):
     <?php
     echo $timeFormat;
     ?>

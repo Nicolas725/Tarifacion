@@ -69,7 +69,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -145,7 +145,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -221,7 +221,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -297,7 +297,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -373,7 +373,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -449,7 +449,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -525,7 +525,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -601,7 +601,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -677,7 +677,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -753,7 +753,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -829,7 +829,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -906,7 +906,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -983,7 +983,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -1059,7 +1059,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
@@ -1135,7 +1135,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         $timeFormat = sprintf('%02d:%02d:%02d', $hours, $mins, $secs);
         ?>
         <br>
-        La cantidad de minutos hablados es:
+        La cantidad de tiempo hablado es (hh/mm/ss):
         <?php
         echo $timeFormat;
         ?>
