@@ -9,7 +9,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
 	<link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/themes/default.css">
-	<link rel="stylesheet" href="css/estilo2.css">
+	<link rel="stylesheet" href="css/estilo3.css">
 	<script src="librerias/jquery-3.2.1.min.js"></script>
 	<script src="js/funcionesI.js"></script>
 	<script src="librerias/bootstrap/js/bootstrap.js"></script>
@@ -113,10 +113,20 @@ session_start();
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#Internos_Tabla').load('Internos_Tabla.php');
-});
+
+
+
+<form class="form-inline" action="internos.php" method="post">
+
+	<button type="submit" class="btn btn-primary text-right"><i class="fa fa-pdf" aria-hidden="true"></i>
+		Actualizar Internos</button>
+
+</form>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#Internos_Tabla').load('Internos_Tabla.php');
+	});
 </script>
 <script type="text/javascript">
 $(document).ready(function(){
