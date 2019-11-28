@@ -19,8 +19,87 @@ include("./conexion.php");
 </head>
 <body>
 
-	<a href="index.php" class="btn btn-primary">Volver</a>
-	<a href="salir.php" class="btn btn-danger">Cerrar Sesion</a>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<table class="table table-hover table-condensed">
+					<tr>
+
+						<td>
+						</td>
+
+						<td>
+						</td>
+
+						<td>
+							<h2>Período de Tarifacíon</h2>
+						</td>
+
+
+						<td>
+						</td>
+
+						<td>
+						</td>
+
+						<td>
+						</td>
+
+					</tr>
+					<tr>
+
+						<td>
+						</td>
+
+						<td>
+						</td>
+
+						<td>
+							<?php
+							print "<img src=\"imagenes/UM_logo3.jpg\">"
+							?>
+						</td>
+
+						<td>
+						</td>
+
+						<td>
+						</td>
+
+						<td>
+						</td>
+
+					</tr>
+					<tr>
+						<td>
+							<a href="index.php" class="btn btn-primary">Volver</a>
+						</td>
+
+						<td>
+						</td>
+
+						<td>
+						</td>
+
+						<td>
+						</td>
+
+						<td>
+							<a href="salir.php" class="btn btn-danger">Cerrar Sesion</a>
+						</td>
+
+					</tr>
+
+
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
 
 	<div class="container">
 		<div id="Costos_Tabla"></div>

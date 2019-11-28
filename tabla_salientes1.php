@@ -18,7 +18,7 @@
 			</tr>
 
 			<?php
-
+ 
 				$params1='ext';
 				$params2='d_inicio';
 				$params3='d_fin';

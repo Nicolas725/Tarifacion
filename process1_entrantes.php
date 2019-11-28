@@ -10,10 +10,92 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
 //echo $sede1,"\n";
 //echo $depar1,"\n";
 ?>
-
-<div class="row">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1.0">
+  <title>Software de Tarifacion</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="css/estilo2.css">
+  <link rel="stylesheet" href="icono.min.css">
+</head>
+<body>
+  <div class="container">
+  <div class="row">
   <div class="col-sm-12">
-    <h2>LLamadas Entrantes</h2>
+    <table class="table table-hover table-condensed">
+      <tr>
+
+        <td>
+        </td>
+
+        <td>
+        </td>
+
+        <td>
+          <h2>Llamadas Entrantes</h2>
+        </td>
+
+
+        <td>
+        </td>
+
+        <td>
+        </td>
+
+        <td>
+        </td>
+
+      </tr>
+      <tr>
+
+        <td>
+        </td>
+
+        <td>
+        </td>
+
+        <td>
+          <?php
+          print "<img src=\"imagenes/UM_logo3.jpg\">"
+          ?>
+        </td>
+
+        <td>
+        </td>
+
+        <td>
+        </td>
+
+        <td>
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <a href="index.php" class="btn btn-primary">Volver</a>
+        </td>
+
+        <td>
+        </td>
+
+        <td>
+        </td>
+
+        <td>
+        </td>
+
+        <td>
+          <a href="salir.php" class="btn btn-danger">Cerrar Sesion</a>
+        </td>
+
+      </tr>
+
+
+    </table>
 
     <table class="table table-hover table-condensed table-bordered">
       <tr>
@@ -1135,6 +1217,7 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
       <button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary text-right"><i class="fa fa-pdf" aria-hidden="true"></i>
         Generate PDF</button>
       </form>
+      <br>
       <form class="form-inline" method="post" action="generate_xls_entrantes.php">
         <?php if ($option) {?>
           <input type='hidden' name='inter' value='<?php echo "$option";?>'/>
@@ -1152,5 +1235,9 @@ $depar1 = isset($_POST['nombreDepar']) ? $_POST['nombreDepar'] : false;
         <button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary text-right"><i class="fa fa-pdf" aria-hidden="true"></i>
           Generate XLS</button>
         </form>
+        <br>
       </div>
     </div>
+  </div>
+</body>
+</html>

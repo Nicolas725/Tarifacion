@@ -51,10 +51,100 @@ $individualL=[];
 $individualC=[];
 
 ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1.0">
+  <title>Software de Tarifacion</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="css/estilo2.css">
+  <link rel="stylesheet" href="icono.min.css">
+</head>
+<body>
 
-<div class="row">
-  <div class="col-sm-12">
-    <h2>LLamadas Salientes</h2>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-sm-12">
+  				<table class="table table-hover table-condensed">
+  					<tr>
+
+  						<td>
+  						</td>
+
+  						<td>
+  						</td>
+
+  						<td>
+  							<h2>Llamadas Salientes</h2>
+  						</td>
+
+
+  						<td>
+  						</td>
+
+  						<td>
+  						</td>
+
+  						<td>
+  						</td>
+
+  					</tr>
+  					<tr>
+
+  						<td>
+  						</td>
+
+  						<td>
+  						</td>
+
+  						<td>
+  							<?php
+  							print "<img src=\"imagenes/UM_logo3.jpg\">"
+  							?>
+  						</td>
+
+  						<td>
+  						</td>
+
+  						<td>
+  						</td>
+
+  						<td>
+  						</td>
+
+  					</tr>
+  					<tr>
+  						<td>
+  							<a href="index.php" class="btn btn-primary">Volver</a>
+  						</td>
+
+  						<td>
+  						</td>
+
+  						<td>
+  						</td>
+
+  						<td>
+  						</td>
+
+  						<td>
+  							<a href="salir.php" class="btn btn-danger">Cerrar Sesion</a>
+  						</td>
+
+  					</tr>
+
+
+  				</table>
+  			</div>
+  		</div>
+  	</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br>
     <table table border="1" class="table table-hover table-condensed table-bordered">
       <tr>
         <td>Interno</td>
@@ -5109,6 +5199,7 @@ echo $timeFormat;
   <button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary"><i class="fa fa-pdf" aria-hidden="true"></i>
     Generate PDF</button>
   </form>
+  <br>
   <form class="form-inline" method="post" action="generate_xls_salientes.php">
     <?php if ($tarifa) {?>
       <input type='hidden' name='tarifa' value='<?php echo "$tarifa";?>'/>
@@ -5150,3 +5241,7 @@ echo $timeFormat;
     <button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary"><i class="fa fa-pdf" aria-hidden="true"></i>
       Generate XLS</button>
     </form>
+    <br>
+    </div>
+  </body>
+  </html>

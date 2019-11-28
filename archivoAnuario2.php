@@ -2,10 +2,10 @@
 session_start();
 include("./conexion.php");
 
-
+ 
 $fp = fopen('baseDatos.txt','rb');
 if (!$fp) {
-	echo 'ERROR: No ha sido posible abrir el archivo. Revisa su nombre y sus permisos.'; 
+	echo 'ERROR: No ha sido posible abrir el archivo. Revisa su nombre y sus permisos.';
 	exit;
 	}
 

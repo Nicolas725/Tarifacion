@@ -33,20 +33,110 @@ $individualN=[];
 $individualL=[];
 $individualC=[];
 ?>
-<html lang="" dir="ltr">
 
-<head>
-	<meta charset="utf-8">
-	<title>Graficos con plotly</title>
-	<link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
-	<script src="librerias/jquery-3.4.1.min.js"></script>
-	<script src="librerias/chart/plotly-latest.min.js"></script>
-</head>
-<body>
+
+	<!DOCTYPE html>
+	<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Software de Tarifacion</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
+		<link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/themes/default.css">
+		<link rel="stylesheet" href="css/estilo3.css">
+		<script src="librerias/jquery-3.2.1.min.js"></script>
+		<script src="js/funcionesT.js"></script>
+		<script src="librerias/bootstrap/js/bootstrap.js"></script>
+		<script src="librerias/alertifyjs/alertify.js"></script>
+		<script src="librerias/jquery-3.4.1.min.js"></script>
+		<script src="librerias/chart/plotly-latest.min.js"></script>
+
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<table class="table table-hover table-condensed">
+						<tr>
+
+							<td>
+							</td>
+
+							<td>
+							</td>
+
+							<td>
+								<h2>Período de Tarifacíon</h2>
+							</td>
+
+
+							<td>
+							</td>
+
+							<td>
+							</td>
+
+							<td>
+							</td>
+
+						</tr>
+						<tr>
+
+							<td>
+							</td>
+
+							<td>
+							</td>
+
+							<td>
+								<?php
+								print "<img src=\"imagenes/UM_logo3.jpg\">"
+								?>
+							</td>
+
+							<td>
+							</td>
+
+							<td>
+							</td>
+
+							<td>
+							</td>
+
+						</tr>
+						<tr>
+							<td>
+								<a href="index.php" class="btn btn-primary">Volver</a>
+							</td>
+
+							<td>
+							</td>
+
+							<td>
+							</td>
+
+							<td>
+							</td>
+
+							<td>
+								<a href="salir.php" class="btn btn-danger">Cerrar Sesion</a>
+							</td>
+
+						</tr>
+
+
+					</table>
+				</div>
+			</div>
+		</div>
+
+
 
 	<div class="row">
 		<div class="col-sm-12">
-			<h2>LLamadas Salientes</h2>
+			<h2>Llamadas Salientes</h2>
 			<table table border="1" class="table table-hover table-condensed table-bordered">
 				<tr>
 					<td>Interno</td>
@@ -442,24 +532,24 @@ $individualC=[];
 
 					<div class="panel panel-body">
 						<div class="row">
-							<div class="col-sm-6">
+							<div class="col-sm-10">
 								<div id="cargaBarras">
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-10">
 									<div id="cargaBarrasM">
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-10">
 									<div id="cargaBarrasSR">
 									</div>
 								</div>
 								<br>
 								<br>
-								<div class="col-sm-6">
+								<div class="col-sm-10">
 									<div id="cargaBarrasRC">
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-10">
 									<div id="cargaBarrasE">
 									</div>
 								</div>
@@ -504,9 +594,15 @@ $individualC=[];
 		<?php }	foreach ($individual as $identifier) {
 			echo "<input type='hidden' name='costos[]' value='$identifier' />";
 		} ?>
+
+
 		<button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary"><i class="fa fa-pdf" aria-hidden="true"></i>
 			Generate PDF</button>
 		</form>
+
+		<br>
+		<br>
+
 		<form class="form-inline" method="post" action="generate_xls_agenda.php">
 			<?php if ($tarifa) {?>
 				<input type='hidden' name='tarifa' value='<?php echo "$tarifa";?>'/>

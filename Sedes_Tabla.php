@@ -17,7 +17,7 @@ include("./conexion.php");
         <td>Editar</td>
         <td>Eliminar</td>
       </tr>
-
+ 
       <?php
 
       $sql="SELECT id_S, nombreSede FROM SEDES";

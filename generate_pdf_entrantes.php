@@ -2,7 +2,7 @@
 //include conexionection file
 include("./conexion.php");
 require ("fpdf/fpdf.php");
-
+ 
 class PDF extends FPDF
 {
   // Page header
@@ -10,7 +10,7 @@ class PDF extends FPDF
   {
     // Logo
     $this->Image('C:\xampp\htdocs\www\TESIS\Tarifacion\imagenes\UM_logo.jpg',10,10,50);
-    
+
     $this->SetFont('Arial','B',13);
     // Move to the right
     $this->Cell(100);

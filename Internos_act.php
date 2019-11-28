@@ -2,7 +2,7 @@
 include("./conexion.php");
 
 $id=$_POST['id'];
-$n=$_POST['nombre'];
+$n=$_POST['nombre']; 
 $a=$_POST['inter'];
 $e=$_POST['sede'];
 $t=$_POST['depar'];

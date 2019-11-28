@@ -114,15 +114,6 @@ session_start();
 	</div>
 </div>
 
-
-
-<form class="form-inline" action="internos.php" method="post">
-
-	<button type="submit" class="btn btn-primary text-right"><i class="fa fa-pdf" aria-hidden="true"></i>
-		Actualizar Internos</button>
-
-</form>
-
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('#Internos_Tabla').load('Internos_Tabla.php');
@@ -142,7 +133,5 @@ $(document).ready(function(){
 	});
 });
 </script>
-<a href="index.php" class="btn btn-primary">Volver</a>
-<a href="salir.php" class="btn btn-danger">Cerrar Sesion</a>
 </body>
 </html>

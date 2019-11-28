@@ -17,7 +17,7 @@ include("./conexion.php");
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2>LLamadas Salientes</h2>
+				<h2>Llamadas Salientes</h2>
 				<br><br>
 				<table class="table table-hover table-condensed">
 					<tr>
@@ -26,11 +26,20 @@ include("./conexion.php");
 						?>
 					</tr>
 					<br><br>
+					<td>
+
+					</td>
+					<td>
+
+					</td>
 					<td><a href="index.php" class="btn btn-primary">Volver</a></td>
 					<td>
 
 					</td>
 					<td><a href="salir.php" class="btn btn-danger">Cerrar Sesion</a></td>
+					<td>
+
+					</td>
 					<br>
 				</table>
 				<form method="post" action="process_salientes.php">
@@ -52,8 +61,10 @@ include("./conexion.php");
 					<td>
 						<br><br>
 						<input type="submit" value="Filtrar" class="btn btn-primary">
+
 					</td>
 				</form>
+				<br><br>
 				<div class="row">
 					<div class="col-sm-12">
 						<table class="table table-hover table-condensed table-bordered">

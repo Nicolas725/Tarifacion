@@ -1,6 +1,6 @@
 <?php
 include("./conexion.php");
-
+ 
 $n=$_POST['nombre'];
 $a=$_POST['inter'];
 $e=$_POST['sede'];

@@ -4,7 +4,6 @@ include("./conexion.php");
 ?>
 <div class="row">
   <div class="col-sm-12">
-    <h2>Costos</h2>
     <table class="table table-hover table-condensed table-bordered">
       <tr>
         <td>Llamadas</td>
@@ -13,7 +12,7 @@ include("./conexion.php");
         <td>To</td>
         <td>Editar</td>
       </tr>
-      
+
       <?php
 
       $sql="SELECT * FROM Costos";

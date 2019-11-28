@@ -3,7 +3,7 @@ include("./conexion.php");
 
 $id=$_POST['id_D'];
 $n=$_POST['depar'];
-
+ 
 if ($n){
 
 	$sql="UPDATE DEPARTAMENTOS set nombreDepar='$n' where id_D='$id'";

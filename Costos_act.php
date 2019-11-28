@@ -5,7 +5,7 @@ $id=$_POST['id'];
 $n=$_POST['Tarifa'];
 $a=$_POST['Fromf'];
 $e=$_POST['Tof'];
-
+ 
 //if ($n && $a && $e){
 $sql="UPDATE Costos set Tarifa='$n',
 Fromf ='$a',
