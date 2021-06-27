@@ -9,7 +9,7 @@ class PDF extends FPDF
   function Header()
   {
     // Logo
-    $this->Image('C:\xampp\htdocs\www\TESIS\Tarifacion\imagenes\UM_logo.jpg',10,10,50);
+    $this->Image('imagenes\UM_logo.jpg',10,10,50);
 
     $this->SetFont('Arial','B',13);
     // Move to the right
