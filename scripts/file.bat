@@ -1,0 +1,1 @@
+cmd /c ""C:\Program Files\Git\bin\bash.exe" --login -i -- C:\xampp\htdocs\Tarifacion\scripts\importador\importador_tickets.sh"
