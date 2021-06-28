@@ -2,7 +2,7 @@ from xml.dom import minidom
 import MySQLdb
 import sys
 
-db = MySQLdb.connect(host='localhost', user='root', passwd='mac1778##', db='telefonos')
+db = MySQLdb.connect(host='localhost', user='root', passwd='', db='telefonos')
 
 xmldoc = minidom.parse(sys.argv[1])
 
@@ -149,18 +149,18 @@ def  persist_incoming_transfer(entry):
 
     c.execute(query)
 
-print "Salidas: %d" % len(salidas)
+print ("Salidas: %d" % len(salidas))
 for x in salidas:
     persist_outgoing(x)
 
-print "Entradas: %d" % len(entradas)
+print ("Entradas: %d" % len(entradas))
 for x in entradas:
     persist_incoming(x)
 
-print "SalidasT: %d" % len(salidasTransf)
+print ("SalidasT: %d" % len(salidasTransf))
 for x in salidasTransf:
     persist_outgoing_transfer(x)
 
-print "EntradasT: %d" % len(entradasTransf)
+print ("EntradasT: %d" % len(entradasTransf))
 for x in entradasTransf:
     persist_incoming_transfer(x)
